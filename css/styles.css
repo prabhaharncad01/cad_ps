@@ -1597,7 +1597,7 @@ h2 ,p{
 
 
   
-    .container{
+    .containercontent{
   body {font-family: Arial, Helvetica, sans-serif;}
   * {box-sizing: border-box;
     border-radius: 5px;
@@ -1627,7 +1627,11 @@ h2 ,p{
   input[type=submit]:hover {
     background-color: #45a049;
   }
-  
+  .container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+  }
 
   }
 
