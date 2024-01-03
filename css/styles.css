@@ -1603,6 +1603,7 @@ h2 ,p{
     border-radius: 5px;
     background-color: #f2f2f2;
     padding: 20px;}
+    .container{
   
   input[type=text], select, textarea {
     width: 100%;
@@ -1627,12 +1628,8 @@ h2 ,p{
   input[type=submit]:hover {
     background-color: #45a049;
   }
-  .container {
-    border-radius: 5px;
-    background-color: #f2f2f2;
-    padding: 20px;
-  }
-
+}
+  
   }
 
 
