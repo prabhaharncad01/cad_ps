@@ -68,13 +68,13 @@
     width: 20%;
     margin-left: 38%;
 }
-.menubar{
+.menubar
   * {
 box-sizing: border-box;
 }
 
 
-body {
+.menubar body {
 margin: 0;
 
 }
@@ -184,7 +184,7 @@ clear: both;
   height: auto;
 }
 }
-}
+
 
 .bannerimg img{
   width:100%;
