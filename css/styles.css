@@ -1,7 +1,8 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: 'Dancing Script', cursive;
+    font-family: 'Lobster', sans-serif;
+
 }
 
 
@@ -92,8 +93,20 @@ font-size: 16px;
 color: black;
 text-align: center;
 padding: 14px 16px;
+padding-left: 50px;
 text-decoration: none;
 }
+
+.childnavbar{
+  overflow: hidden;
+  background-color:white;
+  display: inline-block;
+}
+
+.childnavbar a {
+ 
+  float: right;
+ }
 
 .dropdown {
 float: left;
@@ -104,7 +117,7 @@ overflow: hidden;
 font-size: 16px;  
 border: none;
 outline: none;
-color: white;
+color: black;
 padding: 14px 16px;
 background-color: inherit;
 font: inherit;
@@ -178,9 +191,13 @@ clear: both;
   height: 450px;
 }
 
+marquee{
+  margin-top: 20px;
+}
+
 .gallary{
   width: 220px;
-border-color: #24262b;
+border-color:white;
 border-width:2px;
 border-style: solid;
 display: inline-block;
