@@ -68,18 +68,15 @@
     width: 20%;
     margin-left: 38%;
 }
-.menubar{
+.menubar
   * {
 box-sizing: border-box;
 }
 
 
-body {
-margin: 0;
 
-}
 
-.navbar {
+.menubar .navbar {
 overflow: hidden;
 background-color:white;
 
@@ -97,7 +94,7 @@ padding-left: 50px;
 text-decoration: none;
 }
 
-.childnavbar{
+.menubar .childnavbar{
   overflow: hidden;
   background-color:white;
   display: inline-block;
@@ -113,7 +110,7 @@ float: left;
 overflow: hidden;
 }
 
-.dropdown .dropbtn {
+.menubar.dropdown .dropbtn {
 font-size: 16px;  
 border: none;
 outline: none;
@@ -184,10 +181,10 @@ clear: both;
   height: auto;
 }
 }
-}
+
 
 .bannerimg img{
-  width:100%;
+  width: 1350px;
   height: 450px;
 }
 
@@ -384,7 +381,7 @@ background-color: #ffffff;
   }
 }
 
-.loginpage {
+.loginpage 
   .logbac{
   width: 100%;
   height:100vh;
@@ -395,7 +392,7 @@ background-color: #ffffff;
   align-items: center;
   justify-content: center;}
   
- nav {
+  .loginpage  nav {
 width: 90%;
 position:absolute;
 top: 0;
@@ -425,15 +422,15 @@ justify-content:space-between;
     width:100%;
   
   }
-}
-.bg-logform{
+
+.bg-logform
 
 body, html {
   height: 100%;
   font-family: Arial, Helvetica, sans-serif;
 }
 
-* {
+.bg-logform * {
   box-sizing: border-box;
 }
 .logcontainer {
@@ -461,7 +458,7 @@ input[type=text]:focus, input[type=password]:focus {
   outline: none;
 }
 
-.btn {
+.bg-logform .btn {
   background-color: white;
   color: rosybrown;
   padding: 16px 20px;
@@ -471,12 +468,12 @@ input[type=text]:focus, input[type=password]:focus {
   opacity: 0.9;
 }
 
-.btn:hover {
+.bg-logform .btn:hover {
   opacity: 1;
   background-color:red;
   color: black;
 }
-}
+
 .regform{
   *{
     margin: 0;
