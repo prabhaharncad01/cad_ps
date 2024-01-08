@@ -6,39 +6,29 @@
 }
 
 
-.topcontainer {
-    background-color: black;
-    color: white;
-}
+
 
 .topcontainer nav {
     background-color: black;
     color: white;
+    padding: 10px;
 }
 
-.topcontainer li,
-.topcontainer ul,
-.topcontainer h4 {
-    display: inline-block;
-}
+ .topcontainer li,h4,ul{
+  display: inline;
+  cursor: pointer;
+ }
 
-.topcontainer h4 {
-    margin: 10px;
-    font-size: 18px;
-}
+
 .topcontainer ul {
-    margin-left: 70%;
+    margin-left: 60%;
 }
-.topcontainer li {
-    padding-left: 10px;
-}
-.topcontainer ul a {
-    display: inline;
-}
+
+
 .topcontainer .fa {
     padding: 10px;
     font-size: 15px;
-    width: 20px;
+    width: 0px;
     text-align: center;
     text-decoration: none;
     margin: 2px 1px;
@@ -197,6 +187,7 @@ border-width:2px;
 border-style: solid;
 display: inline-block;
 margin: 10px;
+margin-bottom: 50px;
 
 }
 .gallary img{
@@ -207,11 +198,13 @@ margin: 10px;
 
 .productcollections{
   text-align: center;
-  margin-top: 100px;
+  margin-top: 50px;
+ 
 }
 
 .productcollections h2{
-  font-size: 75px;
+  font-size: 100px;
+  margin-bottom: 100px;
 }
 
 .gallary:hover{
@@ -222,10 +215,12 @@ color: white;
 }
 .gallary .btn{
   color: rosybrown;
-  height: 25px;
-  width: 75px;
+  height: 35px;
+  width: 135px;
   margin: 10px;
-
+  cursor: pointer;
+  font-size: 15px;
+  font-style: oblique;
 }
 
 .gallary .btn:hover{
@@ -680,24 +675,25 @@ button {
   border-radius: 4px;
   cursor: pointer;
 }
-.footercontainer{
+
  
-  *{margin: 0;
+.footercontainer *{margin: 0;
     padding: 0;
-    box-sizing: border-box;}
+    box-sizing: border-box;
+    line-height: 1.5;
+    font-family: 'Poppins', sans-serif;}
    
-   line-height: 1.5;
-  font-family: 'Poppins', sans-serif;
   
-  .container{
+  
+    .footercontainer .container{
     max-width: 1170px;
     margin: auto;
   }
-  .row{
+  .footercontainer .row{
   display: flex;
   flex-wrap: wrap;
   }
-  ul{
+  .footercontainer ul{
     list-style: none;
   
   }
@@ -773,7 +769,7 @@ button {
     }
   }
   }
-}
+
 .servicepage{
   
     *{
@@ -1107,6 +1103,7 @@ h2 ,p{
       *{
         margin: 0;
         padding: 0;
+        font-family: 'Lobster', sans-serif;
     }
     
     
@@ -1298,6 +1295,8 @@ margin: 10px;
 
 .productcollections h2{
   font-size: 75px;
+ 
+ 
 }
 
 .gallary:hover{
@@ -1713,15 +1712,15 @@ transform: rotatex(-35deg);
   }
   }
 
-.contactusform {
 
-*{
+
+  .contactusform *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "Poppins" , sans-serif;
 }
-body{
+.contactusform body{
   min-height: 100vh;
   width: 100%;
   background: #c8e8e9;
@@ -1729,19 +1728,19 @@ body{
   align-items: center;
   justify-content: center;
 }
-.container{
+.contactusform  .container{
   width: 85%;
   background: #fff;
   border-radius: 6px;
   padding: 20px 60px 30px 40px;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 }
-.container .content{
+.contactusform .container .content{
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-.container .content .left-side{
+.contactusform .container .content .left-side{
   width: 25%;
   height: 100%;
   display: flex;
@@ -1751,7 +1750,7 @@ body{
   margin-top: 15px;
   position: relative;
 }
-.content .left-side::before{
+.contactusform .content .left-side::before{
   content: '';
   position: absolute;
   height: 70%;
@@ -1761,20 +1760,20 @@ body{
   transform: translateY(-50%);
   background: #afafb6;
 }
-.content .left-side .details{
+.contactusform .content .left-side .details{
   margin: 14px;
   text-align: center;
 }
-.content .left-side .details i{
+.contactusform .content .left-side .details i{
   font-size: 30px;
   color: #3e2093;
   margin-bottom: 10px;
 }
-.content .left-side .details .topic{
+.contactusform .content .left-side .details .topic{
   font-size: 18px;
   font-weight: 500;
 }
-.content .left-side .details .text-one,
+.contactusform .content .left-side .details .text-one,
 .content .left-side .details .text-two{
   font-size: 14px;
   color: #afafb6;
@@ -1793,7 +1792,7 @@ body{
   width: 100%;
   margin: 12px 0;
 }
-.right-side .input-box input,
+ .right-side .input-box input,
 .right-side .input-box textarea{
   height: 100%;
   width: 100%;
@@ -1805,21 +1804,21 @@ body{
   padding: 0 15px;
   resize: none;
 }
-.right-side .message-box{
+.contactusform .right-side .message-box{
   min-height: 110px;
   background: #F0F1F8;
   border-radius: 6px;
   padding: 0 15px;
   resize: none;
 }
-.right-side .input-box textarea{
+.contactusform .right-side .input-box textarea{
   padding-top: 6px;
 }
-.right-side .button{
+.contactusform .right-side .button{
   display: inline-block;
   margin-top: 12px;
 }
-.right-side .button input[type="button"]{
+.contactusform .right-side .button input[type="button"]{
   color: #fff;
   font-size: 18px;
   outline: none;
@@ -1830,41 +1829,40 @@ body{
   cursor: pointer;
   transition: all 0.3s ease;
 }
-.button input[type="button"]:hover{
+.contactusform .button input[type="button"]:hover{
   background: #5029bc;
 }
 
 @media (max-width: 950px) {
-  .container{
+  .contactusform  .container{
     width: 90%;
     padding: 30px 40px 40px 35px ;
   }
-  .container .content .right-side{
+  .contactusform .container .content .right-side{
    width: 75%;
    margin-left: 55px;
 }
 }
 @media (max-width: 820px) {
-  .container{
+  .contactusform  .container{
     margin: 40px 0;
     height: 100%;
   }
-  .container .content{
+  .contactusform  .container .content{
     flex-direction: column-reverse;
   }
- .container .content .left-side{
+  .contactusform  .container .content .left-side{
    width: 100%;
    flex-direction: row;
    margin-top: 40px;
    justify-content: center;
    flex-wrap: wrap;
  }
- .container .content .left-side::before{
+ .contactusform .container .content .left-side::before{
    display: none;
  }
- .container .content .right-side{
+ .contactusform  .container .content .right-side{
    width: 100%;
    margin-left: 0;
  }
-}
 }
