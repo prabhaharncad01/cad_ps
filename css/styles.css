@@ -74,11 +74,7 @@ box-sizing: border-box;
 }
 
 
-body {
-margin: 0;
-
-
-.menubar .navbar {
+ .navbar {
 overflow: hidden;
 background-color:white;
 
@@ -96,7 +92,7 @@ padding-left: 35px;
 text-decoration: none;
 }
 
-.menubar .childnavbar{
+ .childnavbar{
   overflow: hidden;
   background-color:white;
   display: inline-block;
@@ -112,7 +108,7 @@ float: left;
 overflow: hidden;
 }
 
-.menubar.dropdown .dropbtn {
+.dropdown .dropbtn {
 font-size: 16px;  
 border: none;
 outline: none;
@@ -123,7 +119,7 @@ font: inherit;
 margin: 0;
 }
 
-.navbar a:hover, .dropdown:hover .dropbtn {
+ a:hover, .dropdown:hover .dropbtn {
 background-color:gray;
 }
 
@@ -699,7 +695,7 @@ button {
   }
   .row{
   display: flex;
-  text-wrap: wrap;
+  flex-wrap: wrap;
   }
   ul{
     list-style: none;
@@ -1024,7 +1020,7 @@ h2 ,p{
     }
     .row{
     display: flex;
-    text-wrap: wrap;
+    flex-wrap: wrap;
     }
     ul{
       list-style: none;
@@ -1329,7 +1325,7 @@ transform: rotatex(-35deg);
     }
     .row{
     display: flex;
-    text-wrap: wrap;
+    flex-wrap: wrap;
     }
     ul{
       list-style: none;
@@ -1637,7 +1633,7 @@ transform: rotatex(-35deg);
     }
     .row{
     display: flex;
-    text-wrap: wrap;
+    flex-wrap: wrap;
     }
     ul{
       list-style: none;
