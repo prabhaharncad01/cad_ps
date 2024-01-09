@@ -171,9 +171,28 @@ clear: both;
 }
 
 
-.bannerimg img{
-  width: 1350px;
-  height: 450px;
+
+.slideshow > .slider {
+  width: 800px;
+  height: 400px;
+  background: url(bannerimgs/beast1.png);
+  margin: 100px auto;
+  animation: slide 20s infinite;
+
+}
+ @keyframes slide{
+  25%{
+    background: url(bannerimgs/beast5.png);
+  }
+  50%{
+    background: url(bannerimgs/beast4.png);
+  }
+  75%{
+    background: url(bannerimgs/beast3.png);
+  }
+  100%{
+    background: url(bannerimgs/beast2.png);
+  }
 }
 
 marquee{
