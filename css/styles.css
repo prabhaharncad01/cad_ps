@@ -170,41 +170,14 @@ clear: both;
 }
 }
 
-.slideshow > .slider {
-  border: #777 solid;
-  width: 800px;
-  height: 400px;
-  background: url(/cadps/bannerimgs/beast1.png);
-  animation: slide 20s infinite;
-   margin: 50px auto;
 
-}
- .slideshow > body{
-  margin: 0;
-  padding: 0;
-  background: gray;
+ .bannerimg img{
+  width: 1350px;
+  height: 800px;
+ position:relative;
+
  
-}
-
-
-@keyframes slide{
-  0%{
-    background: url(/cadps/bannerimgs/beast5.png);
-  }
-  25%{
-    background: url(/cadps/bannerimgs/beast4.png);
-  }
-  50%{
-    background: url(/cadps/bannerimgs/beast3.png);
-  }
-  75%{
-    background: url(/cadps/bannerimgs/beast2.png);
-  }
-  100%{
-    background: url(/cadps/bannerimgs/beast.png);
-  }
-}
-
+ }
 
 
 
