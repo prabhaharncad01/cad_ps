@@ -169,16 +169,23 @@ clear: both;
   height: auto;
 }
 }
-.slider {
 
-  border-style: solid;
-  background: #777;
+.slideshow > .slider {
+  border: #777 solid;
   width: 800px;
   height: 400px;
-  margin: 75px auto;
-  background:url(/cadps/bannerimgs/beast5.png);
+  background: url(/cadps/bannerimgs/beast1.png);
   animation: slide 20s infinite;
+   margin: 50px auto;
+
 }
+ .slideshow > body{
+  margin: 0;
+  padding: 0;
+  background: gray;
+ 
+}
+
 
 @keyframes slide{
   0%{
