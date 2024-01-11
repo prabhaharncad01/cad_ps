@@ -1720,13 +1720,13 @@ transform: rotatex(-35deg);
 
 
 
-  .contactusform *{
+  .contactusform {*{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "Poppins" , sans-serif;
 }
-.contactusform body{
+ body{
   min-height: 100vh;
   width: 100%;
   background: #c8e8e9;
@@ -1734,19 +1734,19 @@ transform: rotatex(-35deg);
   align-items: center;
   justify-content: center;
 }
-.contactusform  .container{
+ .container{
   width: 85%;
   background: #fff;
   border-radius: 6px;
   padding: 20px 60px 30px 40px;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 }
-.contactusform .container .content{
+  .container .content{
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-.contactusform .container .content .left-side{
+.container .content .left-side{
   width: 25%;
   height: 100%;
   display: flex;
@@ -1756,7 +1756,7 @@ transform: rotatex(-35deg);
   margin-top: 15px;
   position: relative;
 }
-.contactusform .content .left-side::before{
+ .content .left-side::before{
   content: '';
   position: absolute;
   height: 70%;
@@ -1766,20 +1766,20 @@ transform: rotatex(-35deg);
   transform: translateY(-50%);
   background: #afafb6;
 }
-.contactusform .content .left-side .details{
+ .content .left-side .details{
   margin: 14px;
   text-align: center;
 }
-.contactusform .content .left-side .details i{
+ .content .left-side .details i{
   font-size: 30px;
   color: #3e2093;
   margin-bottom: 10px;
 }
-.contactusform .content .left-side .details .topic{
+ .content .left-side .details .topic{
   font-size: 18px;
   font-weight: 500;
 }
-.contactusform .content .left-side .details .text-one,
+ .content .left-side .details .text-one,
 .content .left-side .details .text-two{
   font-size: 14px;
   color: #afafb6;
@@ -1810,21 +1810,21 @@ transform: rotatex(-35deg);
   padding: 0 15px;
   resize: none;
 }
-.contactusform .right-side .message-box{
+.right-side .message-box{
   min-height: 110px;
   background: #F0F1F8;
   border-radius: 6px;
   padding: 0 15px;
   resize: none;
 }
-.contactusform .right-side .input-box textarea{
+ .right-side .input-box textarea{
   padding-top: 6px;
 }
-.contactusform .right-side .button{
+.right-side .button{
   display: inline-block;
   margin-top: 12px;
 }
-.contactusform .right-side .button input[type="button"]{
+ .right-side .button input[type="button"]{
   color: #fff;
   font-size: 18px;
   outline: none;
@@ -1835,40 +1835,41 @@ transform: rotatex(-35deg);
   cursor: pointer;
   transition: all 0.3s ease;
 }
-.contactusform .button input[type="button"]:hover{
+ .button input[type="button"]:hover{
   background: #5029bc;
 }
 
 @media (max-width: 950px) {
-  .contactusform  .container{
+ .container{
     width: 90%;
     padding: 30px 40px 40px 35px ;
   }
-  .contactusform .container .content .right-side{
+  .container .content .right-side{
    width: 75%;
    margin-left: 55px;
 }
 }
 @media (max-width: 820px) {
-  .contactusform  .container{
+ .container{
     margin: 40px 0;
     height: 100%;
   }
-  .contactusform  .container .content{
+  .container .content{
     flex-direction: column-reverse;
   }
-  .contactusform  .container .content .left-side{
+ .container .content .left-side{
    width: 100%;
    flex-direction: row;
    margin-top: 40px;
    justify-content: center;
    flex-wrap: wrap;
  }
- .contactusform .container .content .left-side::before{
+.container .content .left-side::before{
    display: none;
  }
- .contactusform  .container .content .right-side{
+ .container .content .right-side{
    width: 100%;
    margin-left: 0;
  }
 }
+  }
