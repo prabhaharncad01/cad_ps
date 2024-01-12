@@ -1173,6 +1173,22 @@ transform: rotatex(-35deg);
   backdrop-filter: blur(15px);
   background:rgba(255,255, 255,0.2);
 }
+.connav{
+  backdrop-filter: blur(15px);
+  background:rgba(255,255, 255,0.2);
+}
+.connav img{
+  height: 90px;
+  width: 100px;
+  position: relative;
+  left: 20px;
+  top: 20px;
+}
+.connav ul{
+  position: relative;
+  left: 60%;
+}
+
   .container .content{
   display: flex;
   align-items: center;
@@ -1326,7 +1342,7 @@ transform: rotatex(-35deg);
 .regcontainerchild{
   max-width: 700px;
   width: 100%;
-  background:url();
+  background:#ffffff;
   padding: 25px 30px;
   border-radius: 5px;
 }
@@ -1369,7 +1385,7 @@ form .userdetails .inputbox{
   outline:none;
   border-radius: 5px;
   border: 1px solid #ccc;
-  padding-left: 8px;
+  padding-left: 7px;
   font-size: 16px;
   border-bottom-width: 2px;
   transition: all 0.3s ease;
@@ -1433,6 +1449,22 @@ form .button input:hover{
   background: linear-gradient(-135deg, #71b7e6,#9b59b6);
 
 }
+.regnav img{
+  position: relative;
+  margin: 15px 8px 10px 9px;
+  height: 100px;
+  width: 100px;
+}
+.regnav ul{
+  position: relative;
+  left: 58%;
+  padding:20px;
+  margin-bottom: 10px;
+}
+.regnav {
+  background: linear-gradient(135deg, #71b7e6,#9b59b6);
+}
+
 @media(max-width:584px){
 .regcontainerchild{
   max-width: 100%;
