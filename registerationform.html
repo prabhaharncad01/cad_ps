@@ -8,59 +8,77 @@
 </head>
 <body>
  <div class="regcontainer">
-         <h1 id="title">Registeration form</h1>
+    <div class="regcontainerchild">
+    <div class="title">Registeration form</div>    
         <form action="#">
      <div class="userdetails">
         <div class="inputbox">
-            <span class="fname">firstName</span>
+            <span class="details">FirstName</span>
             <input type="text" placeholder="Enter your firstName"required>
         </div>
         <div class="inputbox">
-            <span class="lname">LastName</span>
+            <span class="details">LastName</span>
             <input type="text" placeholder="Enter your LastName"required>
         </div>
         <div class="inputbox">
-            <span class="usrname">UserName</span>
+            <span class="details">UserName</span>
             <input type="text" placeholder="Enter your UserName"required>
         </div>
         <div class="inputbox">
-            <span class="phno">Phonenumber</span>
-            <input type="tel" placeholder="Enter your Phonenumber"required>
+            <span class="details">Email</span>
+            <input type="text" placeholder="Enter your Emailid"required>
         </div>
         <div class="inputbox">
-            <span class="fname">Password</span>
-            <input type="password" placeholder="Enter your Password"required>
+            <span class="details">Phonenumber</span>
+            <input type="text" placeholder="Enter your Phonenumber"required>
         </div>
         <div class="inputbox">
-            <span class="fname">Confirm Password</span>
-            <input type="password" placeholder="Enter your Password"required>
+            <span class="details">Address</span>
+            <input type="text" placeholder="Enter your Address"required>
         </div>
-        <div class="genderdetails">
+        <div class="inputbox">
+            <span class="details">Password</span>
+            <input type="text" placeholder="Confirm your Password"required>
+        </div>
+        <div class="inputbox">
+            <span class="details">Confirm Password</span>
+            <input type="text" placeholder="Enter your Password"required>
+        </div>
+       
+          </div>
+          <div class="genderdetails">
+            <input type="radio" name="gender" id="dot-1">
+            <input type="radio" name="gender" id="dot-2">
+            <input type="radio" name="gender" id="dot-3">
+           
             <div class="catogory">
-                <label for="">
-                    <span class="dotone"></span>
+                <span class="gendertitle">Gender</span>
+                <label for="dot-1">
+                    <span class="dot one"></span>
                 <span class="gender">Male</span>
             </label>
-                <label for="">
-                    <span class="dotone"></span>
+                <label for="dot-2">
+                    <span class="dot two"></span>
                 <span class="gender">Female</span>
             </label>
-                <label for="">
-                    <span class="dotone"></span>
+                <label for="dot-3">
+                    <span class="dot three"></span>
                 <span class="gender">Prefer not to say</span>
             </label>
             </div>
+          
           </div>
           <div class="button">
             <input type="submit" value="register">
-          </div>
         </div>
+    
+        
     </div>
 
 
-
-
+   
     </form>
+</div>
 </div>
 
 </body>
