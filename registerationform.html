@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registerationform</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+ <div class="regcontainer">
+    <div class="regcontainerchild">
+    <div class="title">Registeration form</div>    
+        <form action="https://api.web3forms.com/submit" method="POST">
+           
+            
+     <input type="hidden" name="access_key" value="3a48e3fc-4808-485c-8297-4431303abb4a">
+           
+     <div class="userdetails">
+        <div class="inputbox">
+            <span class="details">FirstName</span>
+            <input type="text" placeholder="Enter your firstName"required>
+        </div>
+        <div class="inputbox">
+            <span class="details">LastName</span>
+            <input type="text" placeholder="Enter your LastName"required>
+        </div>
+        <div class="inputbox">
+            <span class="details">UserName</span>
+            <input type="text" placeholder="Enter your UserName"required>
+        </div>
+        <div class="inputbox">
+            <span class="details">Email</span>
+            <input type="email" placeholder="Enter your Emailid"required>
+        </div>
+        <div class="inputbox">
+            <span class="details">Phonenumber</span>
+            <input type="tel" placeholder="Enter your Phonenumber"required>
+        </div>
+        <div class="inputbox">
+            <span class="details">Address</span>
+            <input type="text" placeholder="Enter your Address"required>
+        </div>
+        <div class="inputbox">
+            <span class="details">Password</span>
+            <input type="password" placeholder="Confirm your Password"required>
+        </div>
+        <div class="inputbox">
+            <span class="details">Confirm Password</span>
+            <input type="password" placeholder="Enter your Password"required>
+        </div>
+       
+          </div>
+          <div class="genderdetails">
+            <input type="radio" name="gender" id="dot-1">
+            <input type="radio" name="gender" id="dot-2">
+            <input type="radio" name="gender" id="dot-3">
+           
+            <div class="catogory">
+                <span class="gendertitle">Gender</span>
+                <label for="dot-1">
+                    <span class="dot one"></span>
+                <span class="gender">Male</span>
+            </label>
+                <label for="dot-2">
+                    <span class="dot two"></span>
+                <span class="gender">Female</span>
+            </label>
+                <label for="dot-3">
+                    <span class="dot three"></span>
+                <span class="gender">Prefer not to say</span>
+            </label>
+            </div>
+          
+          </div>
+          <div class="button">
+            <input type="submit" value="register">
+        </div>
+    
+        
+    </div>
+
+
+   
+    </form>
+</div>
+</div>
+
+</body>
+</html>
