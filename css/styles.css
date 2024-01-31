@@ -1123,4 +1123,16 @@ transform: rotatex(-35deg);
   }
 
 
-  
+  .swiper {
+    width: 1300px;
+    height: 300px;
+  }
+
+  .swiper .swiper-pagination{
+           color: #ccc;
+  }
+
+  .swiper.swiper-button-prev,.swiper.swiper-button-next
+  {
+    color: #ddd;
+  }
