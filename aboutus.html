@@ -89,9 +89,12 @@
     <!-- Additional required wrapper -->
     <div class="swiper-wrapper">
       <!-- Slides -->
-      <div class="swiper-slide"><img src="https://picsum.photos/id/237/1300/300"alt=""></div>
-      <div class="swiper-slide"><img src="https://picsum.photos/id/238/1300/300" alt=""></div>
-      <div class="swiper-slide"><img src="https://picsum.photos/id/239/1300/300" alt=""></div>
+      <div class="swiper-slide"><img src="https://picsum.photos/id/237/1300/500"alt=""></div>
+      
+      <div class="swiper-slide"><img src="https://picsum.photos/id/238/1300/500" alt=""></div>
+   
+      <div class="swiper-slide"><img src="https://picsum.photos/id/239/1300/500" alt=""></div>
+  
       ...
     </div>
     <!-- If we need pagination -->
@@ -104,16 +107,74 @@
     <!-- If we need scrollbar -->
     <div class="swiper-scrollbar"></div>
   </div>
+<!-- Aboutus conent -->
+<div class="aboutus">
+
+  <!-- journey -->
+  <div class="ourjourney">
+    <img src="https://i.postimg.cc/kgMYcCNR/luxury-perfume-ad-23-2148150911.jpg" alt="">
+<h1 class="journhead">OUR JOURNEY</h1>
+<h4 class="journsubhead">Beast Perfumes</h4>
+<p class="journpara">Ramsons Perfumes has started its journey with a vision by the promoters to be globally acknowledged for the quality and excellence of products and maintaining a close relation with customers at all levels of sales and supports. Elite Standards and perfect Qualities is what RPPL promises all its customers.
+  Over the years, Company has achieved a competitive edge with sound understanding of mass marketing dynamics. The company offers quality Products out of a keen understanding of consumer needs and keeping up company’s values of innovation and customer satisfaction.
+
+" To succeed we believe that we need total commitment and highest standard of ethical and corporate behavior in order to provide the best for our consumers, stakeholders and employees "
+
+</p>
+</div>
+  <!-- Networks -->
+  <div class="ournetworks">
+    <img src="https://i.postimg.cc/kgMYcCNR/luxury-perfume-ad-23-2148150911.jpg" alt="">
+<h1 class="nethead">OUR
+  Networks
+</h1>
+<p class="netpara">Ramsons Perfumes ensures a seamless coordination of all functions not just in production, but also in its supply chain management. From tracking market changes and market research to sourcing raw materials, manufacturing and delivering finished goods, Ramsons Perfumes maintains the highest efficiency. With a manufacturing network of 3 units and a network of more than 1500 distributors with Strong sales team, we distribute our products across the country, covering all market segments and geographies. Our products are the result of research initiatives.
+
+  We are now working on strengthening distribution and growing our presence in all parts of the country with the introduction of high margin brands in those territories.
+  
+  Our Innovative & eagerness to penetrate market is one of the key-issues of our strategic plans. To enable our fast paced growth we have invested in marketing, sales and product development extensively. By investing in a sophisticated microbiological lab plants combined with implementing international procedures and quality demands we ensure meeting global standards of quality.
+  </p>
+</div>
+
+ <!-- Mission -->
+ <div class="ourmission">
+
+  <h1 class="mishead">OUR
+    Mission
+  </h1>
+<p class="mispara">Our mission is to develop and create top quality products and brands in constant evolution that satisfies the needs of end-consumers, working as a team with distributors and the most prestigious stores all over india. In order to uphold this mission our most important values are,
+
+  ? To be creative and innovative
+  ? To aim for product excellence
+  ? To create and build strong brands
+  </p>
+</div>
+
+ <!-- Mission -->
+ <div class="ourpolicy">
+
+  <h1 class="polhead">OUR
+    Policy
+  </h1>
+  <p class="polpara">Beast team committed to the provisions of timely, efficient, consistent and quality services provided by polite and helpful officers that meet our customers’ expectations.
+
+    We also place great emphasis on the efficient handling of complaints and provide quality product. We may not able to provide complete customer satisfaction level but will always trying for the best possible solution.
+    
+    To achieve the customer satisfaction vision, we encouraged to voice the customers views and best possible solution and continuously improving our product quality by responding to customer complaints as efficiently and effectively as possible.
+    </p>
+  </div>
+
+<!--Reserach & Devlopement -->
+
+<div class="ourpolicy">
+
+    <h1>OUR
+      Reserach & Devlopement
+    </h1>
+<p>We possess an R&D unit, which is continuously involved in conducting in-depth research to bring out innovative products. Our R&D laboratory is equipped with sophisticated techniques that allow us in designing and development of our product at par with the latest market developments. Further, our efforts are aimed to deliver an impeccable range of products as per the requirement of our esteemed clients.</p>
 
 
-
-
-
-
-
-
-
-
+</div>
 
 
 
@@ -205,12 +266,35 @@
   // Optional parameters
   direction: 'horizontal',
   loop: true,
+  autoplay:{delay:1000},
+  
 
   // If we need pagination
   pagination: {
     el: '.swiper-pagination',
-    
-  },
+    clickable: true,
+    /*Return bullets as numbers*/
+    renderBullet: function (index, className) {
+           return '<span class="' + className + '">' + (index + 1) + "</span>";
+         },
+         breakpoints: {
+          0: {
+            slidesPerView: 1,
+              spaceBetween: 40,
+           },
+           767: {
+            slidesPerView: 2,
+             spaceBetween:48,
+           },
+           988: {
+            slidesPerView: 3,
+             spaceBetween: 96,
+           },
+        },
+        
+         },
+
+  
 
   // Navigation arrows
   navigation: {
@@ -224,5 +308,6 @@
   },
 });
     </script>
+    
 </body>
 </html>

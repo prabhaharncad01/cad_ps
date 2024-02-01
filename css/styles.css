@@ -1125,14 +1125,85 @@ transform: rotatex(-35deg);
 
   .swiper {
     width: 1300px;
-    height: 300px;
+    height: 500px;
   }
 
   .swiper .swiper-pagination{
            color: #ccc;
   }
 
-  .swiper.swiper-button-prev,.swiper.swiper-button-next
-  {
-    color: #ddd;
+ 
+  .swiper-pagination-bullet {
+    width: 32px;
+    height: 32px;
+    text-align: center;
+    line-height: 24px;
+    font-size: 16px;
+    color: #B2B5BE;
+    opacity: 1;
+    background: transparent;
+    display: flex;
+    border-radius: 50%;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    
   }
+  .swiper-pagination .swiper-pagination-bullet{
+    
+      opacity: 1;
+      color: #000;
+  }
+ .swiper-pagination-bullet.swiper-pagination-bullet-active{
+ background-color:#DEE3FF;
+  color:#19224C;
+  height: 4rem;
+  width: 6rem;
+  border-radius: 0.8rem;
+  align-items: center;
+  }
+  .swiper .swiper-button-next ,.swiper-button-prev{
+    color: #B2B5BE;
+   
+  }
+
+  .aboutus{
+    margin: 20px;
+  }
+.ourjourney{
+  margin-bottom: 50px;
+}
+
+  .aboutus .ourjourney>.journhead{
+    font-size: 50px;
+  }
+  .aboutus .ourjourney>.journsubhead{
+    font-size: 40px;
+  }
+  .aboutus .ourjourney>.journpara{
+    margin-top: 10px;
+  }
+  .aboutus .ourjourney>img{
+    height: 350px;
+    width: 350px;
+    float: right;
+    margin: 20px;
+  }
+
+  .aboutus .ournetworks>.nethead{
+    font-size: 50px;
+  }
+  
+  .ournetworks>img{
+    float: left;
+    height: 350px;
+    width: 350px;
+    margin: 20px;
+  }
+
+
+  .aboutus .ournetworks>.netpara{
+    margin-top: 10px;
+  }
+
+  .aboutus .ournetworks>.
