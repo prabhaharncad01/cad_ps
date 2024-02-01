@@ -35,7 +35,7 @@
       </div> 
         
         </div>
-     <div class="menubar">
+     <div class="aboutmenubar">
         <div class="navbar">
             <a href="home.html">Home</a>
       <a href="#">Perfumes</a>
@@ -48,39 +48,11 @@
       <a href="#">Gift Box</a>
       <a href="#">About Us</a>
       <a href="service.html">Service</a>
+      <div class="abtlastchild">
       <a href="contact.html">Contact us</a>
       <a href="login.html">logIn</a>
-      
+    </div>
     
-      </div>
-      
-       
-      <div class="dropdown">
-        <button class="dropbtn">perfumes
-          <i class="fa fa-caret-down"></i>
-        </button>
-        <div class="dropdown-content">
-          <div class="header">
-            <h2>Perfumes Menu</h2>
-          </div>   
-          <div class="row">
-            <div class="column">
-              <h3>Perfumes</h3>
-              <a href="bestseller.html">Best seller</a>
-              <a href="premiumperfumes.html">Premieum perfumes</a>
-              <a href="perfumesforher.html">Perfumes for her</a>
-              <a href="perfumesfirhim.html">Perfumes for him</a>
-            </div>
-            <div class="column">
-              <h3>Combo special</h3>
-              <a href="festivalsplcombo.html">Festival special Combo</a>
-              <a href="bestdeals.html">special deals</a>
-            </div>
-            <div class="column">
-              <h3>Gift</h3>
-              <a href="#">Gift set</a>
-            </div>
-          </div>
         </div>
       </div>  
 
@@ -89,11 +61,14 @@
     <!-- Additional required wrapper -->
     <div class="swiper-wrapper">
       <!-- Slides -->
-      <div class="swiper-slide"><img src="https://picsum.photos/id/237/1300/500"alt=""></div>
+      <div class="swiper-slide"><img src="https://picsum.photos/id/230/1300/500"alt=""></div>
       
-      <div class="swiper-slide"><img src="https://picsum.photos/id/238/1300/500" alt=""></div>
+      <div class="swiper-slide"><img src="https://picsum.photos/id/231/1300/500" alt=""></div>
    
-      <div class="swiper-slide"><img src="https://picsum.photos/id/239/1300/500" alt=""></div>
+      <div class="swiper-slide"><img src="https://picsum.photos/id/232/1300/500" alt=""></div>
+      <div class="swiper-slide"><img src="https://picsum.photos/id/233/1300/500" alt=""></div>
+      <div class="swiper-slide"><img src="https://picsum.photos/id/234/1300/500" alt=""></div>
+      <div class="swiper-slide"><img src="https://picsum.photos/id/235/1300/500" alt=""></div>
   
       ...
     </div>
@@ -273,26 +248,9 @@
   pagination: {
     el: '.swiper-pagination',
     clickable: true,
-    /*Return bullets as numbers*/
-    renderBullet: function (index, className) {
-           return '<span class="' + className + '">' + (index + 1) + "</span>";
-         },
-         breakpoints: {
-          0: {
-            slidesPerView: 1,
-              spaceBetween: 40,
-           },
-           767: {
-            slidesPerView: 2,
-             spaceBetween:48,
-           },
-           988: {
-            slidesPerView: 3,
-             spaceBetween: 96,
-           },
-        },
+   SlidesPerView:5,
         
-         },
+  },
 
   
 
