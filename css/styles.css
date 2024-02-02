@@ -1122,10 +1122,17 @@ transform: rotatex(-35deg);
   }
   }
 
+.aboutmenubar >.navbar>.abtlastchild{
+  display: flex;
+  gap: 60px;
+}
 
+.aboutmenubar{
+  margin: 20px;
+}
   .swiper {
-    width: 1300px;
-    height: 500px;
+    width: 1280px;
+    height: 400px;
   }
 
   .swiper .swiper-pagination{
@@ -1152,17 +1159,18 @@ transform: rotatex(-35deg);
   .swiper-pagination .swiper-pagination-bullet{
     
       opacity: 1;
-      color: #000;
+      color: #ffffff;
+      background-color: #B2B5BE;
   }
  .swiper-pagination-bullet.swiper-pagination-bullet-active{
  background-color:#DEE3FF;
   color:#19224C;
-  height: 4rem;
-  width: 6rem;
+  height: 0.8rem;
+  width: 4rem;
   border-radius: 0.8rem;
   align-items: center;
   }
-  .swiper .swiper-button-next ,.swiper-button-prev{
+  .swiper .swiper-button-next , .swiper .swiper-button-prev{
     color: #B2B5BE;
    
   }
