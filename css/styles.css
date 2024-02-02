@@ -1122,6 +1122,20 @@ transform: rotatex(-35deg);
   }
   }
 
+
+
+
+
+
+
+  /* aboutuspage */
+
+
+  .aboutusbody{
+    background-color: #fff;
+
+  }
+
 .aboutmenubar >.navbar>.abtlastchild{
   display: flex;
   gap: 60px;
@@ -1130,56 +1144,65 @@ transform: rotatex(-35deg);
 .aboutmenubar{
   margin: 20px;
 }
-  .swiper {
-    width: 1280px;
-    height: 400px;
-  }
-
-  .swiper .swiper-pagination{
-           color: #ccc;
-  }
-
- 
-  .swiper-pagination-bullet {
-    width: 32px;
-    height: 32px;
-    text-align: center;
-    line-height: 24px;
-    font-size: 16px;
-    color: #B2B5BE;
-    opacity: 1;
-    background: transparent;
-    display: flex;
-    border-radius: 50%;
-    cursor: pointer;
-    justify-content: center;
-    align-items: center;
-    
-  }
-  .swiper-pagination .swiper-pagination-bullet{
-    
-      opacity: 1;
-      color: #ffffff;
-      background-color: #B2B5BE;
-  }
- .swiper-pagination-bullet.swiper-pagination-bullet-active{
- background-color:#DEE3FF;
-  color:#19224C;
-  height: 0.8rem;
-  width: 4rem;
-  border-radius: 0.8rem;
-  align-items: center;
-  }
-  .swiper .swiper-button-next , .swiper .swiper-button-prev{
-    color: #B2B5BE;
-   
-  }
-
+  
   .aboutus{
     margin: 20px;
   }
+
+
+.headingimg img{
+  height: 500px;
+  width: 500px;
+  margin-top: 50px;
+  float: left;
+
+  padding: 20px;
+}
+.headingimg> p{
+  
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  padding: 50px;
+  margin-top: 75px;
+}
+.standfor
+{
+  display: flex;
+
+}
+.transparcy,.craftsmanship,.yourenough,.perfumeforall{
+  border: 2px  300px 300px black;
+  padding: 10px;
+  margin-left: 20px;
+  text-align: center;
+}
+
+.transparcy>.transhead{
+  margin-bottom: 8px;
+}
+.transparcy>.transpara{
+
+}
+
+.craftsmanship>.crafthead{
+  margin-bottom: 8px;
+}
+
+
+.yourenough>.enoughhead{
+  margin-bottom: 8px;
+}
+.perfumeforall>.allhead{
+  margin-bottom: 8px;
+}
+
+
+
+
 .ourjourney{
-  margin-bottom: 50px;
+ margin-top: 200px;
+  padding: 20px;
 }
 
   .aboutus .ourjourney>.journhead{
@@ -1198,6 +1221,14 @@ transform: rotatex(-35deg);
     margin: 20px;
   }
 
+
+/* networks */
+
+  .ournetworks{
+    margin-top: 200px;
+    padding: 20px;
+  }
+
   .aboutus .ournetworks>.nethead{
     font-size: 50px;
   }
@@ -1214,4 +1245,75 @@ transform: rotatex(-35deg);
     margin-top: 10px;
   }
 
-  .aboutus .ournetworks>.
+ /* mission */
+
+ .ourmission{
+  margin-top: 200px;
+  padding: 20px;
+}
+
+.aboutus .ourmission>.mishead{
+  font-size: 50px;
+}
+
+.ourmission>img{
+  float: right;
+  height: 350px;
+  width: 350px;
+  margin: 20px;
+}
+
+
+.aboutus .ourmission>.mispara{
+  margin-top: 10px;
+}
+
+
+/* policy */
+
+.ourpolicy{
+  margin-top: 200px;
+  padding: 20px;
+}
+
+.aboutus .ourpolicy>.polhead{
+  font-size: 50px;
+}
+
+.ourpolicy>img{
+  float: left;
+  height: 350px;
+  width: 350px;
+  margin: 20px;
+}
+
+
+.aboutus .ourpolicy>.polpara{
+  margin-top: 10px;
+}
+
+/* research and development */
+
+
+
+.ourresearch{
+  margin-top: 200px;
+  padding: 20px;
+  margin-bottom: 100px;
+}
+
+.aboutus .ourresearch>.researchhead{
+  font-size: 50px;
+}
+
+.ourresearch>img{
+  float: right;
+  height: 350px;
+  width: 350px;
+  margin: 20px;
+}
+
+
+.aboutus .ourresearch>.researchpara{
+  margin-top: 10px;
+}
