@@ -1150,13 +1150,13 @@ transform: rotatex(-35deg);
   }
 
 
-.headingimg img{
+  .about-info>.about-img{
   height: 500px;
   width: 500px;
-  margin-top: 50px;
+ margin-bottom: 50px;
   float: left;
 
-  padding: 20px;
+
 }
 .headingimg> p{
   
@@ -1166,6 +1166,176 @@ transform: rotatex(-35deg);
   padding: 50px;
   margin-top: 75px;
 }
+
+.team {
+	padding: 30px 0;
+	text-align: center;
+}
+
+.team h1 {
+	font-size: 2.5rem;
+	margin-bottom: 20px;
+}
+
+.team-cards {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 15px;
+	margin-top: 20px;
+}
+
+.card {
+	background-color: white;
+	border-radius: 6px;
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+	overflow: hidden;
+	transition: transform 0.2s, box-shadow 0.2s;
+	width: 18rem;
+	height: 25rem;
+	margin-top: 10px;
+}
+
+.card:hover {
+	transform: translateY(-5px);
+	box-shadow: 0 8px 12px rgba(0, 0, 0, 0.5);
+}
+
+.card-img {
+	width: 18rem;
+	height: 12rem;
+}
+
+.card-img img {
+	width: 100%;
+	height: 100%;
+	object-fit: fill;
+}
+
+.card-info button {
+	margin: 2rem 1rem;
+}
+
+.card-name {
+	font-size: 2rem;
+	margin: 10px 0;
+}
+
+.card-role {
+	font-size: 1rem;
+	color: #888;
+	margin: 5px 0;
+}
+
+.card-email {
+	font-size: 1rem;
+	color: #555;
+}
+
+/* About Section */
+
+.about {
+	background: rgb(224, 251, 222);
+	background: linear-gradient(360deg, rgb(245, 255, 245) 0% 100%);
+	padding: 100px 0 20px 0;
+	text-align: center;
+}
+
+.about h1 {
+	font-size: 2.5rem;
+	margin-bottom: 20px;
+}
+
+.about p {
+	font-size: 1rem;
+	color: #323030;
+	max-width: 800px;
+	margin: 0 auto;
+}
+
+.about-info {
+	margin: 2rem 2rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: left;
+}
+
+.about-img {
+	width: 20rem;
+	height: 20rem;
+
+}
+
+.about-img img {
+	width: 100%;
+	height: 100%;
+	border-radius: 5px;
+	object-fit: contain;
+}
+
+.about-info p {
+	font-size: 1.3rem;
+	margin: 0 2rem;
+	text-align: justify;
+}
+
+button {
+	border: none;
+	outline: 0;
+	padding: 10px;
+	margin: 2rem;
+	font-size: 1rem;
+	color: white;
+	background-color: #222;
+	text-align: center;
+	cursor: pointer;
+	width: 15rem;
+	border-radius: 4px;
+}
+
+button:hover {
+	background-color: #bbbbbb;
+  color: black;
+}
+
+.aboutus>.ourjourney ,.ournetworks, .ourmission, .ourpolicy,
+.ourresearch{
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+	overflow: hidden;
+	transition: transform 0.2s, box-shadow 0.2s;
+}
+
+
+
+.ourresearch:hover{
+  transform: translateY(-5px);
+	box-shadow: 0 8px 12px rgba(0, 0, 0, 0.5);
+}
+
+.ourjourney:hover{
+  transform: translateY(-5px);
+	box-shadow: 0 8px 12px rgba(0, 0, 0, 0.5);
+}
+
+.ournetworks:hover{
+  transform: translateY(-5px);
+	box-shadow: 0 8px 12px rgba(0, 0, 0, 0.5);
+}
+
+.ourmission:hover{
+  transform: translateY(-5px);
+	box-shadow: 0 8px 12px rgba(0, 0, 0, 0.5);
+}
+
+.ourpolicy:hover{
+  transform: translateY(-5px);
+	box-shadow: 0 8px 12px rgba(0, 0, 0, 0.5);
+}
+
+
+
+
 .standfor
 {
   display: flex;
@@ -1198,23 +1368,23 @@ transform: rotatex(-35deg);
 }
 
 
-
+/* ourjourney */
 
 .ourjourney{
  margin-top: 200px;
   padding: 20px;
 }
 
-  .aboutus .ourjourney>.journhead{
+ .ourjourney>.journhead{
     font-size: 50px;
   }
-  .aboutus .ourjourney>.journsubhead{
+  .ourjourney>.journsubhead{
     font-size: 40px;
   }
-  .aboutus .ourjourney>.journpara{
+ .ourjourney>.journpara{
     margin-top: 10px;
   }
-  .aboutus .ourjourney>img{
+ .ourjourney>img{
     height: 350px;
     width: 350px;
     float: right;
