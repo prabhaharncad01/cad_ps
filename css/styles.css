@@ -13,18 +13,24 @@
     background-color: black;
     color: white;
     padding: 10px;
+ 
 }
 
  .topcontainer li,h4,ul{
   display: inline;
   cursor: pointer;
  }
+ .topcontainer>nav>h4,ul,img,p,.option{
+  display: inline;
 
+ }
 
 .topcontainer ul {
-    margin-left: 60%;
+    margin-left: 35%;
 }
-
+.topcontainer>.option,img{
+  margin-left: 5%;
+}
 
 .topcontainer .fa {
     padding: 10px;
@@ -221,7 +227,7 @@ margin-bottom: 50px;
 
 }
 .gallary p {
-   font-size: 15px;
+   font-size: 12px;
    font-weight: 400;
 }
 
@@ -1620,4 +1626,10 @@ button:hover {
   }
 
   
-  
+  @media screen and (max-width: 300px) {
+    
+    li a p{
+      font-size: 10px;
+    }
+    
+  }
