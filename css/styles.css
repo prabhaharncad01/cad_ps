@@ -80,7 +80,7 @@ font-weight: 600;
 color: black;
 text-align: center;
 padding: 16px 21px;
-padding-left: 20px;
+padding-left: 10px;
 text-decoration: none;
 }
 
@@ -178,10 +178,11 @@ clear: both;
 
 
 .slider{
-  width: 1350px;
-  height: 500px;
+  width: 250px;
+  height: 250px;
   background: url(https://i.postimg.cc/Pr47gGLk/Untitled-design-8.png);
   animation: slide 20s infinite;
+  border-radius: 20px;
 }
 
 
@@ -1339,13 +1340,25 @@ button:hover {
 .standfor
 {
   display: flex;
+  margin-top: 200px;
+
 
 }
+
+.standfor>h1{
+  font-size: 50px;
+}
+
+
+
 .transparcy,.craftsmanship,.yourenough,.perfumeforall{
-  border: 2px  300px 300px black;
-  padding: 10px;
-  margin-left: 20px;
+ 
+  padding: 50px;
+  border: 2px solid black;
   text-align: center;
+  margin-left: 10px;
+  border-radius: 20px;
+  background-color: #FFC0A4;
 }
 
 .transparcy>.transhead{
@@ -1403,10 +1416,10 @@ button:hover {
     font-size: 50px;
   }
   
-  .ournetworks>img{
+  .ournetworks>.abtnetslider{
     float: left;
-    height: 350px;
-    width: 350px;
+    height: 300px;
+    width: 300px;
     margin: 20px;
   }
 
@@ -1426,7 +1439,7 @@ button:hover {
   font-size: 50px;
 }
 
-.ourmission>img{
+.ourmission>.abtmissslider{
   float: right;
   height: 350px;
   width: 350px;
@@ -1487,3 +1500,152 @@ button:hover {
 .aboutus .ourresearch>.researchpara{
   margin-top: 10px;
 }
+
+
+.abtnetslider{
+  width: 1300px;
+  height: 500px;
+  background: url(https://i.postimg.cc/LXyjBYD7/armanibannerimg.jpg);
+  animation: slide 20s infinite;
+  margin-top: 100px;
+}
+
+
+@keyframes slide {
+
+  0%{
+    background: url(https://i.postimg.cc/nLpmyYwg/carobannerimg.jpg);
+  }
+  25%{
+    background: url(https://i.postimg.cc/XqRGQwC2/chanelbannerimg.jpg);
+  }
+  50%{
+    background: url(https://i.postimg.cc/XJXrW2KH/diorabannerimg.jpg);
+  }
+  75%{
+    background: url(https://i.postimg.cc/Kcw9gjzj/kevinbaneerimg2.jpg);
+  }
+  100%{
+    background: url(https://i.postimg.cc/LXyjBYD7/armanibannerimg.jpg);
+  }
+  }
+
+  
+
+  
+.abtmissslider{
+  width: 1300px;
+  height: 500px;
+  background: url(https://i.postimg.cc/26zKSK0D/creative.jpg);
+  animation: misslide 20s infinite;
+  margin-top: 100px;
+}
+
+
+@keyframes misslide {
+
+  0%{
+    background: url(https://i.postimg.cc/HnMZZ1xb/aim.jpg);
+  }
+  25%{
+    background: url(https://i.postimg.cc/Wzx8gWwt/innovative.jpg);
+  }
+  50%{
+    background: url(https://i.postimg.cc/qRbjMMts/excellence.jpg);
+  }
+  75%{
+    background: url(https://i.postimg.cc/yxxpFSqp/creative.jpg);
+  }
+  100%{
+    background: url(https://i.postimg.cc/26zKSK0D/creative.jpg);
+  }
+  }
+
+  
+.abtnetslider{
+  width: 1300px;
+  height: 500px;
+  background: url(https://i.postimg.cc/LXyjBYD7/armanibannerimg.jpg);
+  animation: slide 20s infinite;
+  margin-top: 100px;
+}
+
+
+@keyframes slide {
+
+  0%{
+    background: url(https://i.postimg.cc/nLpmyYwg/carobannerimg.jpg);
+  }
+  25%{
+    background: url(https://i.postimg.cc/XqRGQwC2/chanelbannerimg.jpg);
+  }
+  50%{
+    background: url(https://i.postimg.cc/XJXrW2KH/diorabannerimg.jpg);
+  }
+  75%{
+    background: url(https://i.postimg.cc/Kcw9gjzj/kevinbaneerimg2.jpg);
+  }
+  100%{
+    background: url(https://i.postimg.cc/LXyjBYD7/armanibannerimg.jpg);
+  }
+  }
+
+  
+.abtnetslider{
+  width: 1300px;
+  height: 500px;
+  background: url(https://i.postimg.cc/LXyjBYD7/armanibannerimg.jpg);
+  animation: slide 20s infinite;
+  margin-top: 100px;
+}
+
+
+@keyframes slide {
+
+  0%{
+    background: url(https://i.postimg.cc/nLpmyYwg/carobannerimg.jpg);
+  }
+  25%{
+    background: url(https://i.postimg.cc/XqRGQwC2/chanelbannerimg.jpg);
+  }
+  50%{
+    background: url(https://i.postimg.cc/XJXrW2KH/diorabannerimg.jpg);
+  }
+  75%{
+    background: url(https://i.postimg.cc/Kcw9gjzj/kevinbaneerimg2.jpg);
+  }
+  100%{
+    background: url(https://i.postimg.cc/LXyjBYD7/armanibannerimg.jpg);
+  }
+  }
+
+  
+.abtnetslider{
+  width: 1300px;
+  height: 500px;
+  background: url(https://i.postimg.cc/LXyjBYD7/armanibannerimg.jpg);
+  animation: slide 20s infinite;
+  margin-top: 100px;
+}
+
+
+@keyframes slide {
+
+  0%{
+    background: url(https://i.postimg.cc/nLpmyYwg/carobannerimg.jpg);
+  }
+  25%{
+    background: url(https://i.postimg.cc/XqRGQwC2/chanelbannerimg.jpg);
+  }
+  50%{
+    background: url(https://i.postimg.cc/XJXrW2KH/diorabannerimg.jpg);
+  }
+  75%{
+    background: url(https://i.postimg.cc/Kcw9gjzj/kevinbaneerimg2.jpg);
+  }
+  100%{
+    background: url(https://i.postimg.cc/LXyjBYD7/armanibannerimg.jpg);
+  }
+  }
+
+  
