@@ -178,8 +178,8 @@ clear: both;
 
 
 .slider{
-  width: 250px;
-  height: 250px;
+  width: 1350px;
+  height: 500px;
   background: url(https://i.postimg.cc/Pr47gGLk/Untitled-design-8.png);
   animation: slide 20s infinite;
   border-radius: 20px;
@@ -1463,7 +1463,7 @@ button:hover {
   font-size: 50px;
 }
 
-.ourpolicy>img{
+.ourpolicy>.abtpolslider{
   float: left;
   height: 350px;
   width: 350px;
@@ -1489,7 +1489,7 @@ button:hover {
   font-size: 50px;
 }
 
-.ourresearch>img{
+.ourresearch>.abtrdslider{
   float: right;
   height: 350px;
   width: 350px;
@@ -1506,12 +1506,12 @@ button:hover {
   width: 1300px;
   height: 500px;
   background: url(https://i.postimg.cc/LXyjBYD7/armanibannerimg.jpg);
-  animation: slide 20s infinite;
+  animation: netslide 20s infinite;
   margin-top: 100px;
 }
 
 
-@keyframes slide {
+@keyframes netslide {
 
   0%{
     background: url(https://i.postimg.cc/nLpmyYwg/carobannerimg.jpg);
@@ -1562,90 +1562,62 @@ button:hover {
   }
 
   
-.abtnetslider{
+.abtpolslider{
   width: 1300px;
   height: 500px;
-  background: url(https://i.postimg.cc/LXyjBYD7/armanibannerimg.jpg);
-  animation: slide 20s infinite;
+  background: url(https://i.postimg.cc/qvRpyLBP/policy1.jpg);
+  animation: polslide 20s infinite;
   margin-top: 100px;
 }
 
 
-@keyframes slide {
+@keyframes polslide {
 
   0%{
-    background: url(https://i.postimg.cc/nLpmyYwg/carobannerimg.jpg);
+    background: url(https://i.postimg.cc/KvcbhNT1/policy2.jpg);
   }
   25%{
-    background: url(https://i.postimg.cc/XqRGQwC2/chanelbannerimg.jpg);
+    background: url(https://i.postimg.cc/wM6CHq7C/policy3.jpg);
   }
   50%{
-    background: url(https://i.postimg.cc/XJXrW2KH/diorabannerimg.jpg);
+    background: url(https://i.postimg.cc/wM6CHq7C/policy3.jpg);
   }
   75%{
-    background: url(https://i.postimg.cc/Kcw9gjzj/kevinbaneerimg2.jpg);
+    background: url(https://i.postimg.cc/nchyPL87/policy4.jpg);
   }
   100%{
-    background: url(https://i.postimg.cc/LXyjBYD7/armanibannerimg.jpg);
+    background: url(https://i.postimg.cc/XYTtqcrc/policy5.jpg);
   }
   }
 
   
-.abtnetslider{
+.abtrdslider{
   width: 1300px;
   height: 500px;
-  background: url(https://i.postimg.cc/LXyjBYD7/armanibannerimg.jpg);
-  animation: slide 20s infinite;
+  background: url(https://i.postimg.cc/dDcTDfKc/research1.jpg);
+  animation: rdslide 20s infinite;
   margin-top: 100px;
 }
 
 
-@keyframes slide {
+@keyframes rdslide {
 
   0%{
-    background: url(https://i.postimg.cc/nLpmyYwg/carobannerimg.jpg);
+    background: url(https://i.postimg.cc/tT1kL7dS/research2.jpg);
   }
   25%{
-    background: url(https://i.postimg.cc/XqRGQwC2/chanelbannerimg.jpg);
+    background: url(https://i.postimg.cc/5N5gchvV/research3.jpg);
   }
   50%{
-    background: url(https://i.postimg.cc/XJXrW2KH/diorabannerimg.jpg);
+    background: url(https://i.postimg.cc/25y7Z3tk/research4.jpg);
   }
   75%{
-    background: url(https://i.postimg.cc/Kcw9gjzj/kevinbaneerimg2.jpg);
+    background: url(https://i.postimg.cc/WzGGvZdn/research5.jpg);
   }
   100%{
-    background: url(https://i.postimg.cc/LXyjBYD7/armanibannerimg.jpg);
+    background: url(https://i.postimg.cc/dDcTDfKc/research1.jpg);
   }
   }
 
   
-.abtnetslider{
-  width: 1300px;
-  height: 500px;
-  background: url(https://i.postimg.cc/LXyjBYD7/armanibannerimg.jpg);
-  animation: slide 20s infinite;
-  margin-top: 100px;
-}
-
-
-@keyframes slide {
-
-  0%{
-    background: url(https://i.postimg.cc/nLpmyYwg/carobannerimg.jpg);
-  }
-  25%{
-    background: url(https://i.postimg.cc/XqRGQwC2/chanelbannerimg.jpg);
-  }
-  50%{
-    background: url(https://i.postimg.cc/XJXrW2KH/diorabannerimg.jpg);
-  }
-  75%{
-    background: url(https://i.postimg.cc/Kcw9gjzj/kevinbaneerimg2.jpg);
-  }
-  100%{
-    background: url(https://i.postimg.cc/LXyjBYD7/armanibannerimg.jpg);
-  }
-  }
-
   
