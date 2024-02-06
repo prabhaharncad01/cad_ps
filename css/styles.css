@@ -8,7 +8,6 @@
 
 
 
-
 .topcontainer nav {
     background-color: black;
     color: white;
@@ -20,13 +19,29 @@
   display: inline;
   cursor: pointer;
  }
- .topcontainer>nav>h4,ul,img,p,.option{
-  display: inline;
 
- }
+.sectopcontainer>.serchbar{
+  text-align: center;
+
+}
+.sectopcontainer{
+  display: inline-block;
+}
+
+.sectopcontainer>.secrightbar
+{
+margin-left: 90%;
+}
+.searchbar,.secrightbar
+{
+  display: inline;
+}
+
+
+
 
 .topcontainer ul {
-    margin-left: 35%;
+    margin-left: 60%;
 }
 .topcontainer>.option,img{
   margin-left: 5%;
@@ -218,12 +233,15 @@ marquee{
 
 .gallary{
   width: 220px;
-border-color:white;
+
+border-color:black;
 border-width:2px;
 border-style: solid;
 display: inline-block;
 margin: 10px;
 margin-bottom: 50px;
+
+
 
 }
 .gallary p {
@@ -231,16 +249,24 @@ margin-bottom: 50px;
    font-weight: 400;
 }
 
-.gallary img{
+.gallary>.gallimg{
+  width: 100%;
+}
+
+
+.gallary >img{
   height: 220px;
   width: 220px;
- 
+  align-items: center;
+  justify-content: center;
+
 }
 
 .productcollections{
   text-align: center;
   margin-top: 50px;
- 
+  display: inline-block;
+ position: relative;
 }
 
 .productcollections h2{
@@ -248,7 +274,7 @@ margin-bottom: 50px;
   margin-bottom: 100px;
 }
 
-.gallary:hover{
+.productcollections>.gallary:hover{
 
 background-color: #333;
 color: white;
@@ -1157,22 +1183,7 @@ transform: rotatex(-35deg);
   }
 
 
-  .about-info>.about-img{
-  height: 500px;
-  width: 500px;
- margin-bottom: 50px;
-  float: left;
 
-
-}
-.headingimg> p{
-  
-  text-align: center;
-  align-items: center;
-  justify-content: center;
-  padding: 50px;
-  margin-top: 75px;
-}
 
 .team {
 	padding: 30px 0;
@@ -1254,9 +1265,9 @@ transform: rotatex(-35deg);
 }
 
 .about p {
-	font-size: 1rem;
+	font-size: 0.5rem;
 	color: #323030;
-	max-width: 800px;
+	max-width: 500px;
 	margin: 0 auto;
 }
 
@@ -1268,21 +1279,18 @@ transform: rotatex(-35deg);
 	text-align: left;
 }
 
-.about-img {
-	width: 20rem;
-	height: 20rem;
 
-}
+.about-info>.about-img{
+  height: 500px;
+  width: 500px;
+ margin-bottom: 50px;
+  float: left;
 
-.about-img img {
-	width: 100%;
-	height: 100%;
-	border-radius: 5px;
-	object-fit: contain;
+
 }
 
 .about-info p {
-	font-size: 1.3rem;
+	font-size: 1.1rem;
 	margin: 0 2rem;
 	text-align: justify;
 }
@@ -1345,14 +1353,14 @@ button:hover {
 
 .standfor
 {
-  display: flex;
+  display:block;
   margin-top: 200px;
 
 
 }
 
 .standfor>h1{
-  font-size: 50px;
+  font-size: 75px;
 }
 
 
@@ -1362,28 +1370,32 @@ button:hover {
   padding: 50px;
   border: 2px solid black;
   text-align: center;
-  margin-left: 10px;
+ 
   border-radius: 20px;
-  background-color: #FFC0A4;
+  background-color: #fff;
+  align-content: space-between;
+  margin-top: 30px;
 }
 
 .transparcy>.transhead{
   margin-bottom: 8px;
+  font-size: 30px;
 }
-.transparcy>.transpara{
 
-}
 
 .craftsmanship>.crafthead{
   margin-bottom: 8px;
+  font-size: 30px;
 }
 
 
 .yourenough>.enoughhead{
   margin-bottom: 8px;
+  font-size: 30px;
 }
 .perfumeforall>.allhead{
   margin-bottom: 8px;
+  font-size: 30px;
 }
 
 
