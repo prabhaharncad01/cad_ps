@@ -20,22 +20,35 @@
   cursor: pointer;
  }
 
-.sectopcontainer>.serchbar{
+
+.sectopcontainer
+{
+display: flex;
+text-align: center;
+background-color: #000;
+color:#c8e8e9;
+padding:10px;
+}
+
+.sectopcontainer>.search
+{
   text-align: center;
+  margin-left: 33%;
+  padding:10px;
+  width: 500px;
+}
 
-}
-.sectopcontainer{
-  display: inline-block;
+.sectopcontainer>.secbarname
+{
+  margin-left: 40px;
+  font-size: 10px;
 }
 
-.sectopcontainer>.secrightbar
-{
-margin-left: 90%;
+.sectopcontainer>.secbarimg{
+  margin-left: 20px;
 }
-.searchbar,.secrightbar
-{
-  display: inline;
-}
+
+
 
 
 
@@ -234,7 +247,7 @@ marquee{
 .gallary{
   width: 220px;
 
-border-color:black;
+border-color:white;
 border-width:2px;
 border-style: solid;
 display: inline-block;
