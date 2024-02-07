@@ -21,15 +21,65 @@
  }
 
 
-.sectopcontainer
-{
-display:block ;
-text-align: center;
-background-color: #000;
-color:#c8e8e9;
-padding:10px;
+
+
+
+
+.topcontainer ul {
+    margin-left: 60%;
+}
+.topcontainer>.option,img{
+  margin-left: 5%;
 }
 
+.topcontainer .fa {
+    padding: 10px;
+    font-size: 15px;
+    width: 0px;
+    text-align: center;
+    text-decoration: none;
+    margin: 2px 1px;
+    border-radius: 10px;
+}
+
+  
+  .topcontainer .fa:hover {
+    opacity: 0.7;
+}
+  .topcontainer .fa-twitter {
+    background: black;
+    color: white;
+}
+  .topcontainer .fa-youtube {
+    background: black;
+    color: white;
+}
+  
+  .topcontainer .fa-instagram {
+    background: black;
+    color: white;
+}
+
+
+
+
+/* second top container bar */
+
+.sectopcontainer nav {
+  background-color: black;
+  color: white;
+  padding: 10px;
+
+}
+
+.imgbutton{
+  display:flex;
+  position:absolute;
+right: 0;
+ margin-bottom: 10px;
+ padding: 10px;
+background-color: black;
+}
 
 .sectopcontainer>.secbarname
 {
@@ -94,66 +144,35 @@ position: relative;
   border-radius:5px;
 }
 
-.sectopcontainer>.search
+
+.sectopcontainer1,.sectopcontainer2
 {
-  text-align: center;
-  margin-left: 10%;
-  padding:10px;
+  display: inline-flex;
+}
+
+.sectopcontainer2{
+  margin-left: 200px;
+  display:inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sectopcontainer2>.search{
+     
+  padding: 10px;
+  height: 50px;
   width: 500px;
 }
 
-.searchbar{
-  width: 100%;
-  max-width: 700px;
-  background: rgba(255, 255, 255, 0.2);
-  display: flex;
-  border-radius: 50px;
-  padding: 5px 10px;
-  backdrop-filter: blur(4px) saturate(180%);
-  height: 100%;
-  max-height: 75px;
-  margin-left :230px;
- 
-}
-.searchbar input{
-  background: transparent;
-  flex: 1;
-  border: 0;
-  outline: none;
-  padding: 10px 8px;
-  font-size: 15px;
-  color: #cac7ff;
-
-
-}
-
-::placeholder{
-  color: #cac7ff;
-}
-.searchbar button img {
-  width: 30px;
-
- 
-}
-
-.searchbar button{
-  border: 0;
+.sectopcontainer2>.topsecbutton
+{
+  width: 50px;
+  height: 50px;
   border-radius: 50%;
-  width: 60px;
-  height: 60px;
-  background: #58629b;
-  cursor: pointer;
-  padding: 10px;
 }
 
-
-.imgbutton{
-  display:flex;
-  position:absolute;
-right: 0;
- margin-bottom: 10px;
- padding: 10px;
-background-color: black;
+.sectopcontainer2>.topsecbutton >img{
+  width: 30px;
 }
 
 
@@ -162,42 +181,7 @@ background-color: black;
 
 
 
-
-.topcontainer ul {
-    margin-left: 60%;
-}
-.topcontainer>.option,img{
-  margin-left: 5%;
-}
-
-.topcontainer .fa {
-    padding: 10px;
-    font-size: 15px;
-    width: 0px;
-    text-align: center;
-    text-decoration: none;
-    margin: 2px 1px;
-    border-radius: 10px;
-}
-
-  
-  .topcontainer .fa:hover {
-    opacity: 0.7;
-}
-  .topcontainer .fa-twitter {
-    background: black;
-    color: white;
-}
-  .topcontainer .fa-youtube {
-    background: black;
-    color: white;
-}
-  
-  .topcontainer .fa-instagram {
-    background: black;
-    color: white;
-}
-
+/* topmiddle container */
 
 .topmiddlecontainer img {
     width: 20%;
