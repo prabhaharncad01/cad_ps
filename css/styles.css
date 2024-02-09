@@ -62,117 +62,75 @@
 
 
 
-
 /* second top container bar */
 
-.sectopcontainer nav {
+.sectopcontainer
+  
+
+*{
+  margin: 0;
+  padding: 0;
+  font-family: Sans-serif;
+}
+
+.sectopcontainer >body{
   background-color: black;
-  color: white;
-  padding: 10px;
+
 
 }
-
-.imgbutton{
-  display:flex;
-  position:absolute;
-right: 0;
- margin-bottom: 10px;
- padding: 10px;
-background-color: black;
-}
-
-.sectopcontainer>.secbarname
-{
-  margin-right: 50%;
-  font-size: 10px;
+.secnav{
+  background-color: black;
 position: relative;
-
+padding: 10px;
 }
-
-.sectopcontainer>.secbarimg{
-  margin-left: 20px;
-  position: relative;
-  text-align: center;
+.secbarname{
+  font-size: 15px;
+  color: white;
+}
+.secnav>ul{
+  list-style: none;
+  display: flex;
   align-items: center;
-  justify-content: center;
 }
-
-
-
-.secbar-dropdown{
-  display: inline-block;
-  position: relative;
+.display-picture{
+  margin-left: auto;
 }
-
-.secbutton{
-  border:none;
-  border-radius:2px;
-  font-size:5px;
-  cursor:pointer;
-  width: 20px;
-  margin-top: 10px;
-}
-
-.secbutton:hover{
-  background-color:#ddd;
-}
-
-.secbar-dropdown-options {
-  display: none;
-  position: absolute;
-  overflow: auto;
-  background-color:#fff;
-  border-radius:5px;
-  box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.4);
-}
-
-.secbar-dropdown:hover .secbar-dropdown-options {
-  display: block;
-}
-
-.secbar-dropdown-options a {
-  display: block;
-  color: #000000;
-  padding: 5px;
-  text-decoration: none;
-  padding:20px 40px;
-}
-
-.secbar-dropdown-options a:hover {
-  color: #0a0a23;
-  background-color: #ddd;
-  border-radius:5px;
-}
-
-
-.sectopcontainer1,.sectopcontainer2
-{
-  display: inline-flex;
-}
-
-.sectopcontainer2{
-  margin-left: 200px;
-  display:inline-flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.sectopcontainer2>.search{
-     
-  padding: 10px;
-  height: 50px;
-  width: 500px;
-}
-
-.sectopcontainer2>.topsecbutton
-{
+.display-picture img{
   width: 50px;
-  height: 50px;
   border-radius: 50%;
+  border:2px solid #fff;
+}
+.display-picture img:hover{
+border:2px solid #E78341;
+}
+ .seccard{
+  transition: 0.5s ease;
 }
 
-.sectopcontainer2>.topsecbutton >img{
-  width: 30px;
+.seccard
+> ul{ display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  background: #777;
+  position: absolute;
+  top: 4rem;
+  right:0rem;
+border-radius: 10px;
+padding: 10px 50px 10px 20px;}
+ 
+
+.seccard ul li{
+ 
+  padding: 5px 0;
+  color: #FFF;
+  font-size: 14px;
+}
+.hidden{
+  display: none;
+}
+.hidden a{
+  text-decoration: none;
+  color:#fff;
 }
 
 

@@ -13,7 +13,13 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="css/styles.css">
 <link rel="icon" href="https://i.postimg.cc/fLYkrkfs/beasticon.jpg">
+<style>
+  
 
+
+
+
+</style>
 </head>
 <body>
  <div class="topcontainer">
@@ -29,23 +35,21 @@
  </div>
 
  <div class="sectopcontainer">
-  <nav>
-   <div class="sectopcontainer1">
-      <h3 class="secbarname">hi  prabhaharn !</h3>
-        <img src="https://i.postimg.cc/fLYkrkfs/beasticon.jpg" alt="" style="height: 40px;width: 40px; border-radius: 50%; " class="secbarimg">
-        <div class="secbar-dropdown">
-          <button class="secbutton">@</button>
-          <div class="secbar-dropdown-options">
-            <a href="forgot.html">forgot password</a>
-            <a href="login.html">Login</a>
-          </div>
-        </div>
+  <nav class="secnav"><!--Navigation Bar Starts Here-->
+    <ul>
+      <h3 class="secbarname">hi prabhaharn</h3>
+      <a href="#" class="display-picture"><img src="https://i.postimg.cc/fLYkrkfs/beasticon.jpg" alt=""></a><!--Profile Image-->
+      </ul>
+      <div class="seccard hidden"><!--ADD TOGGLE HIDDEN CLASS ATTRIBUTE HERE-->
+        <ul><!--MENU-->
+          <li><a href="#">Profile</li></a>
+          <li><a href="#">Account</li></a>
+          <li><a href="#">orders</li></a>
+          <li><a href="#">Wishlist</li></a>
+          <li><a href="#">Log Out</li></a>
+        </ul>
       </div>
-   
-      <div class="sectopcontainer2">
-  <input type="text" placeholder="search" name="search" class="search">
-  <button type="submit" class="topsecbutton"><img src="https://i.postimg.cc/ZRK7B6MZ/search1.png" alt=""></button>
-</div>
+
   </nav>
 </div>
 
@@ -308,6 +312,14 @@ Eau De Parfum</h2>
     </footer>
 </div>
 
+<script>
+  
+let card = document.querySelector(".seccard"); //declearing profile card element
+let displayPicture = document.querySelector(".display-picture"); //declearing profile picture
 
+displayPicture.addEventListener("click", function() { //on click on profile picture toggle hidden class from css
+card.classList.toggle("hidden")})
+
+</script>
 </body>
 </html>
