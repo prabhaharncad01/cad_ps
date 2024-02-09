@@ -13,13 +13,12 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="css/styles.css">
 <link rel="icon" href="https://i.postimg.cc/fLYkrkfs/beasticon.jpg">
-<style>
-  
-
-
-
-
-</style>
+<link href="https://fonts.googleapis.com/css2?family=Pangolin&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" rel="stylesheet">
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
 </head>
 <body>
  <div class="topcontainer">
@@ -37,6 +36,18 @@
  <div class="sectopcontainer">
   <nav class="secnav"><!--Navigation Bar Starts Here-->
     <ul>
+    
+    <div class="search">
+     <input  class="search-txt" type="text" name="" placeholder="Type to search">
+     
+     <a class="search-btn" href="#" >
+        <i class="fas fa-search"></i>
+     </a>
+    
+
+ 
+    </div>
+    
       <h3 class="secbarname">hi prabhaharn</h3>
       <a href="#" class="display-picture"><img src="https://i.postimg.cc/fLYkrkfs/beasticon.jpg" alt=""></a><!--Profile Image-->
       </ul>
@@ -117,10 +128,32 @@
 
   </div>  
 
- <div class="slider">
-  
- </div>
+<!-- Slider main container -->
+<div class="swiper">
+  <!-- Additional required wrapper -->
+  <div class="swiper-wrapper">
+    <!-- Slides -->
+    <div class="swiper-slide"><img src="https://i.postimg.cc/6TsV1fR3/Untitled-design-12.png"alt=""></div>
+    
+    <div class="swiper-slide"><img src="https://i.postimg.cc/9z3zjxJ6/Untitled-design-11.png" alt=""></div>
+ 
+    <div class="swiper-slide"><img src="https://i.postimg.cc/ydD30358/Untitled-design-13.png" alt=""></div>
+    <div class="swiper-slide"><img src="https://i.postimg.cc/y85t6m71/Untitled-design-9.png" alt=""></div>
+    <div class="swiper-slide"><img src="https://i.postimg.cc/Pr47gGLk/Untitled-design-8.png" alt=""></div>
+    <div class="swiper-slide"><img src="https://i.postimg.cc/Pr47gGLk/Untitled-design-8.png" alt=""></div>
 
+    ...
+  </div>
+  <!-- If we need pagination -->
+  <div class="swiper-pagination"></div>
+
+  <!-- If we need navigation buttons -->
+  <div class="swiper-button-prev"></div>
+  <div class="swiper-button-next"></div>
+
+  <!-- If we need scrollbar -->
+  <div class="swiper-scrollbar"></div>
+</div>
 
   <marquee behavior="scroll" direction="left">Flat 25% Off On Every Purchase & 30% Off On 100ml Perfumes</marquee>
  <div class="productcollections">
@@ -321,5 +354,43 @@ displayPicture.addEventListener("click", function() { //on click on profile pict
 card.classList.toggle("hidden")})
 
 </script>
+
+<script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+
+<script>
+  const swiper = new Swiper('.swiper', {
+// Optional parameters
+direction: 'horizontal',
+loop: true,
+autoplay:{delay:1000},
+
+
+// If we need pagination
+pagination: {
+el: '.swiper-pagination',
+clickable: true,
+SlidesPerView:5,
+  
+},
+
+
+
+// Navigation arrows
+navigation: {
+nextEl: '.swiper-button-next',
+prevEl: '.swiper-button-prev',
+},
+
+// And if we need scrollbar
+scrollbar: {
+el: '.swiper-scrollbar',
+},
+});
+</script>
+
 </body>
 </html>
