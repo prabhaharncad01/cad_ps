@@ -243,6 +243,9 @@ text-decoration: none;
   float: right;
  }
 
+
+
+
  /* dropdowndetails */
 
 .dropdown {
@@ -286,6 +289,9 @@ color: white;
 .dropdown:hover .dropdown-content {
 display: block;
 }
+
+
+
 
 /* Create three equal columns that floats next to each other */
 .column {
@@ -386,6 +392,8 @@ align-items: center;
 marquee{
   margin-top: 20px;
 }
+
+
 
 
 /* gallery  product images*/
