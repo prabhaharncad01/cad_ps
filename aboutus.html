@@ -1,63 +1,930 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aboutus</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-    
+    <title>Beast Perfume | E-Commerce</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.carousel.min.css">
     <link rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="css/styles.css">
-<link rel="icon" href="images/beasticon.JPG">
-<link
-  rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-/>
-</head>
-<body class="aboutusbody">
-    <div class="topcontainer">
-        <nav>
-            <h4>Call: +919043792705</h4> 
-            <ul>
-                <li><a href="#" class="fa fa-instagram"></a></li>
-                <li><a href="#" class="fa fa-youtube"></a></li>
-                <li><a href="#" class="fa fa-twitter"></a></li>
-            </ul>
-        </nav>
-     </div>
-     <div class="topmiddlecontainer">
-        <img src="images/beastlogo3.JPG" alt="">
+        href="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/css/nice-select.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
         
-      </div> 
-        
-        </div>
-     <div class="aboutmenubar">
-        <div class="navbar">
-            <a href="home.html">Home</a>
-      <a href="perfumes.html">Perfumes</a>
-      <a href="deos.html">Deos</a>
-     
-      <a href="talc.html">Talc</a>
-      <a href="airfresh.html">Air Fresheners</a>
-      <a href="attar.html">Attar</a>
-      <a href="combo.html">Combo</a>
-      <a href="giftset.html">Gift Box</a>
-      <a href="aboutus.html">About Us</a>
-      <a href="service.html">Service</a>
-      <div class="abtlastchild">
-      <a href="contact.html">Contact us</a>
-      <a href="login.html">logIn</a>
-    </div>
+
+  /* aboutuspage */
+
+
+  .aboutusbody{
+    background-color: #fff;
+
+  }
+
+.aboutmenubar >.navbar>.abtlastchild{
+  display: flex;
+  gap: 60px;
+}
+
+.aboutmenubar{
+  margin: 20px;
+}
+  
+  .aboutus{
+    margin: 20px;
+  }
+
+
+
+
+.team {
+	padding: 30px 0;
+	text-align: center;
+}
+
+.team h1 {
+	font-size: 2.5rem;
+	margin-bottom: 20px;
+}
+
+.team-cards {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 15px;
+	margin-top: 20px;
+}
+
+.card {
+	background-color: white;
+	border-radius: 6px;
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+	overflow: hidden;
+	transition: transform 0.2s, box-shadow 0.2s;
+	width: 18rem;
+	height: 25rem;
+	margin-top: 10px;
+}
+
+.card:hover {
+	transform: translateY(-5px);
+	box-shadow: 0 8px 12px rgba(0, 0, 0, 0.5);
+}
+
+.card-img {
+	width: 18rem;
+	height: 12rem;
+}
+
+.card-img img {
+	width: 100%;
+	height: 100%;
+	object-fit: fill;
+}
+
+.card-info button {
+	margin: 2rem 1rem;
+}
+
+.card-name {
+	font-size: 2rem;
+	margin: 10px 0;
+}
+
+.card-role {
+	font-size: 1rem;
+	color: #888;
+	margin: 5px 0;
+}
+
+.card-email {
+	font-size: 1rem;
+	color: #555;
+}
+
+/* About Section */
+
+.about {
+	background: rgb(224, 251, 222);
+	background: linear-gradient(360deg, rgb(245, 255, 245) 0% 100%);
+	padding: 100px 0 20px 0;
+	text-align: center;
+}
+
+.about h1 {
+	font-size: 2.5rem;
+	margin-bottom: 20px;
+}
+
+.about p {
+	font-size: 0.5rem;
+	color: #323030;
+	max-width: 500px;
+	margin: 0 auto;
+}
+
+.about-info {
+	margin: 2rem 2rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: left;
+}
+
+
+.about-info>.about-img{
+  height: 500px;
+  width: 500px;
+ margin-bottom: 50px;
+  float: left;
+
+
+}
+
+.about-info p {
+	font-size: 1.1rem;
+	margin: 0 2rem;
+	text-align: justify;
+}
+
+button {
+	border: none;
+	outline: 0;
+	padding: 10px;
+	margin: 2rem;
+	font-size: 1rem;
+	color: white;
+	background-color: #222;
+	text-align: center;
+	cursor: pointer;
+	width: 15rem;
+	border-radius: 4px;
+}
+
+button:hover {
+	background-color: #bbbbbb;
+  color: black;
+}
+
+.aboutus>.ourjourney ,.ournetworks, .ourmission, .ourpolicy,
+.ourresearch{
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+	overflow: hidden;
+	transition: transform 0.2s, box-shadow 0.2s;
+}
+
+
+
+.ourresearch:hover{
+  transform: translateY(-5px);
+	box-shadow: 0 8px 12px rgba(0, 0, 0, 0.5);
+}
+
+.ourjourney:hover{
+  transform: translateY(-5px);
+	box-shadow: 0 8px 12px rgba(0, 0, 0, 0.5);
+}
+
+.ournetworks:hover{
+  transform: translateY(-5px);
+	box-shadow: 0 8px 12px rgba(0, 0, 0, 0.5);
+}
+
+.ourmission:hover{
+  transform: translateY(-5px);
+	box-shadow: 0 8px 12px rgba(0, 0, 0, 0.5);
+}
+
+.ourpolicy:hover{
+  transform: translateY(-5px);
+	box-shadow: 0 8px 12px rgba(0, 0, 0, 0.5);
+}
+
+
+
+
+.standfor
+{
+  display:block;
+  margin-top: 200px;
+
+
+}
+
+.standfor>h1{
+  font-size: 75px;
+}
+
+
+
+.transparcy,.craftsmanship,.yourenough,.perfumeforall{
+ 
+  padding: 50px;
+  border: 2px solid black;
+  text-align: center;
+ 
+  border-radius: 20px;
+  background-color: #fff;
+  align-content: space-between;
+  margin-top: 30px;
+}
+
+.transparcy>.transhead{
+  margin-bottom: 8px;
+  font-size: 30px;
+}
+
+
+.craftsmanship>.crafthead{
+  margin-bottom: 8px;
+  font-size: 30px;
+}
+
+
+.yourenough>.enoughhead{
+  margin-bottom: 8px;
+  font-size: 30px;
+}
+.perfumeforall>.allhead{
+  margin-bottom: 8px;
+  font-size: 30px;
+}
+
+
+/* ourjourney */
+
+.ourjourney{
+ margin-top: 200px;
+  padding: 20px;
+}
+
+ .ourjourney>.journhead{
+    font-size: 50px;
+  }
+  .ourjourney>.journsubhead{
+    font-size: 40px;
+  }
+ .ourjourney>.journpara{
+    margin-top: 10px;
+  }
+ .ourjourney>img{
+    height: 350px;
+    width: 350px;
+    float: right;
+    margin: 20px;
+  }
+
+
+/* networks */
+
+  .ournetworks{
+    margin-top: 200px;
+    padding: 20px;
+  }
+
+  .aboutus .ournetworks>.nethead{
+    font-size: 50px;
+  }
+  
+  .ournetworks>.abtnetslider{
+    float: left;
+    height: 300px;
+    width: 300px;
+    margin: 20px;
+  }
+
+
+  .aboutus .ournetworks>.netpara{
+    margin-top: 10px;
+  }
+
+ /* mission */
+
+ .ourmission{
+  margin-top: 200px;
+  padding: 20px;
+}
+
+.aboutus .ourmission>.mishead{
+  font-size: 50px;
+}
+
+.ourmission>.abtmissslider{
+  float: right;
+  height: 350px;
+  width: 350px;
+  margin: 20px;
+}
+
+
+.aboutus .ourmission>.mispara{
+  margin-top: 10px;
+}
+
+
+/* policy */
+
+.ourpolicy{
+  margin-top: 200px;
+  padding: 20px;
+}
+
+.aboutus .ourpolicy>.polhead{
+  font-size: 50px;
+}
+
+.ourpolicy>.abtpolslider{
+  float: left;
+  height: 350px;
+  width: 350px;
+  margin: 20px;
+}
+
+
+.aboutus .ourpolicy>.polpara{
+  margin-top: 10px;
+}
+
+/* research and development */
+
+
+
+.ourresearch{
+  margin-top: 200px;
+  padding: 20px;
+  margin-bottom: 100px;
+}
+
+.aboutus .ourresearch>.researchhead{
+  font-size: 50px;
+}
+
+.ourresearch>.abtrdslider{
+  float: right;
+  height: 350px;
+  width: 350px;
+  margin: 20px;
+}
+
+
+.aboutus .ourresearch>.researchpara{
+  margin-top: 10px;
+}
+
+
+.abtnetslider{
+  width: 1300px;
+  height: 500px;
+  background: url(https://i.postimg.cc/LXyjBYD7/armanibannerimg.jpg);
+  animation: netslide 20s infinite;
+  margin-top: 100px;
+}
+
+
+@keyframes netslide {
+
+  0%{
+    background: url(https://i.postimg.cc/nLpmyYwg/carobannerimg.jpg);
+  }
+  25%{
+    background: url(https://i.postimg.cc/XqRGQwC2/chanelbannerimg.jpg);
+  }
+  50%{
+    background: url(https://i.postimg.cc/XJXrW2KH/diorabannerimg.jpg);
+  }
+  75%{
+    background: url(https://i.postimg.cc/Kcw9gjzj/kevinbaneerimg2.jpg);
+  }
+  100%{
+    background: url(https://i.postimg.cc/LXyjBYD7/armanibannerimg.jpg);
+  }
+  }
+
+  
+
+  
+.abtmissslider{
+  width: 1300px;
+  height: 500px;
+  background: url(https://i.postimg.cc/26zKSK0D/creative.jpg);
+  animation: misslide 20s infinite;
+  margin-top: 100px;
+}
+
+
+@keyframes misslide {
+
+  0%{
+    background: url(https://i.postimg.cc/HnMZZ1xb/aim.jpg);
+  }
+  25%{
+    background: url(https://i.postimg.cc/Wzx8gWwt/innovative.jpg);
+  }
+  50%{
+    background: url(https://i.postimg.cc/qRbjMMts/excellence.jpg);
+  }
+  75%{
+    background: url(https://i.postimg.cc/yxxpFSqp/creative.jpg);
+  }
+  100%{
+    background: url(https://i.postimg.cc/26zKSK0D/creative.jpg);
+  }
+  }
+
+  
+.abtpolslider{
+  width: 1300px;
+  height: 500px;
+  background: url(https://i.postimg.cc/qvRpyLBP/policy1.jpg);
+  animation: polslide 20s infinite;
+  margin-top: 100px;
+}
+
+
+@keyframes polslide {
+
+  0%{
+    background: url(https://i.postimg.cc/KvcbhNT1/policy2.jpg);
+  }
+  25%{
+    background: url(https://i.postimg.cc/wM6CHq7C/policy3.jpg);
+  }
+  50%{
+    background: url(https://i.postimg.cc/wM6CHq7C/policy3.jpg);
+  }
+  75%{
+    background: url(https://i.postimg.cc/nchyPL87/policy4.jpg);
+  }
+  100%{
+    background: url(https://i.postimg.cc/XYTtqcrc/policy5.jpg);
+  }
+  }
+
+  
+.abtrdslider{
+  width: 1300px;
+  height: 500px;
+  background: url(https://i.postimg.cc/dDcTDfKc/research1.jpg);
+  animation: rdslide 20s infinite;
+  margin-top: 100px;
+}
+
+
+@keyframes rdslide {
+
+  0%{
+    background: url(https://i.postimg.cc/tT1kL7dS/research2.jpg);
+  }
+  25%{
+    background: url(https://i.postimg.cc/5N5gchvV/research3.jpg);
+  }
+  50%{
+    background: url(https://i.postimg.cc/25y7Z3tk/research4.jpg);
+  }
+  75%{
+    background: url(https://i.postimg.cc/WzGGvZdn/research5.jpg);
+  }
+  100%{
+    background: url(https://i.postimg.cc/dDcTDfKc/research1.jpg);
+  }
+  }
+
+  
+  @media screen and (max-width: 300px) {
     
+    li a p{
+      font-size: 10px;
+    }
+    
+  }
+
+    </style>
+</head>
+<body>
+    <div class="off_canvars_overlay"></div>
+
+<div class="offcanvas_menu offcanvas_two">
+    <div class="canvas_open">
+        <a href="javascript:void(0)"><i class="fa fa-bars"></i></a>
+    </div>
+    <div class="offcanvas_menu_wrapper">
+        <div class="canvas_close">
+            <a href="javascript:void(0)"><i class="fa fa-times"></i></a>
         </div>
-      </div>  
+        <div class="header_account">
+            <ul>
+                <li class="language">
+                    <a href="#"><img src="images/icon/language.png" alt="English"> EN <i
+                            class="fa fa-angle-down"></i></a>
+                    <ul class="dropdown_language">
+                        <li><a href="#">English</a></li>
+                        <li><a href="#">American</a></li>
+                        <li><a href="#">Tamil</a></li>
+                    </ul>
+                </li>
+                <li class="currency">
+                    <a href="#">INR <i class="fa fa-angle-down"></i></a>
+                    <ul class="dropdown_currency">
+                        <li><a href="#">american-dollor</a></li>
+                        <li><a href="#">GBP - British Pound</a></li>
+                        <li><a href="#">USD - US Dollar</a></li>
+                    </ul>
+                </li>
+                <li class="top_links">
+                    <a href="#">My Account <i class="fa fa-angle-down"></i></a>
+                    <ul class="dropdown_links">
+                        <li><a href="#">Checkout</a></li>
+                        <li><a href="#">My Account</a></li>
+                        <li><a href="#">Shopping Cart</a></li>
+                        <li><a href="#">Wishlist</a></li>
+                    </ul>
+                </li>
+
+            </ul>
+        </div>
+
+        <div class="header_right_info">
+            <ul>
+                <li class="search_box">
+                    <a href="javascript:void(0)"><i class="fa fa-search"></i></a>
+                    <div class="search_widget">
+                        <form action="#">
+                            <input type="text" placeholder="Search Your Perfume">
+                            <button type="submit"><i class="fa fa-search"></i></button>
+                        </form>
+                    </div>
+                </li>
+                <li class="header_wishlist">
+                    <a href="#"><i class="fa fa-heart-o"></i>
+                        <span class="item_count">4</span>
+                    </a>
+                </li>
+                <li class="mini_cart_wrapper">
+                    <a href="javascript:void(0)">
+                        <i class="fa fa-shopping-cart"></i>
+                        <span class="item_count">2</span>
+                    </a>
+                    <div class="mini_cart mini_cart2">
+                        <div class="cart_gallery">
+                            <div class="cart_item">
+                                <div class="cart_img">
+                                    <a href="#"><img src="images/small-product/mini1.png" alt="Perfume"></a>
+                                </div>
+                                <div class="cart_info">
+                                    <a href="#">Hugo Boss</a>
+                                    <p><span>Rs. 3330</span> X 1</p>
+                                </div>
+                                <div class="cart_remove">
+                                    <a href="#"><i class="fa fa-times"></i></a>
+                                </div>
+                            </div>
+                            <div class="cart_item">
+                                <div class="cart_img">
+                                    <a href="#"><img src="images/small-product/mini2.png" alt="Perfume"></a>
+                                </div>
+                                <div class="cart_info">
+                                    <a href="#">Bvlgari</a>
+                                    <p><span>Rs. 8350</span> X 1</p>
+                                </div>
+                                <div class="cart_remove">
+                                    <a href="#"><i class="fa fa-times"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mini_cart_table">
+                            <div class="cart_table_border">
+                                <div class="cart_total">
+                                    <span>Sub Total :</span>
+                                    <span class="price">Rs. 11990</span>
+                                </div>
+
+                                <div class="cart_total mt-10">
+                                    <span>Total :</span>
+                                    <span class="price">Rs. 11990</span>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="mini_cart_footer">
+                            <div class="cart_button">
+                                <a href="#">View Cart</a>
+                            </div>
+                            <div class="cart_button">
+                                <a href="#">Checkout</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- mini cart ends here -->
+                </li>
+            </ul>
+        </div>
+
+        <div id="menu" class="text-left">
+            <ul class="offcanvas_main_menu">
+                <li class="menu-item-has-children active">
+                    <a href="#">Home</a>
+                    <ul class="sub-menu">
+                        <li><a href="#">Men</a></li>
+                        <li><a href="#">Women</a></li>
+                        <li><a href="#">Unisex</a></li>
+                        <li><a href="#">Kids</a></li>
+                    </ul>
+                </li>
+                <li class="menu-item-has-children">
+                    <a href="#">Brands</a>
+                    <ul class="sub-menu">
+                        <li class="menu-item-has-children">
+                            <a href="#">Men</a>
+                            <ul class="sub-menu">
+                                <li><a href="#">Versace</a></li>
+                                <li><a href="#">Hugo Boss</a></li>
+                                <li><a href="#">Jaguar</a></li>
+                                <li><a href="#">Armani</a></li>
+                                <li><a href="#">Paco Rabbane</a></li>
+                                <li><a href="#">Ralph Lauren</a></li>
+                            </ul>
+                        </li>
+                        <li class="menu-item-has-children">
+                            <a href="#">Women</a>
+                            <ul class="sub-menu">
+                                <li><a href="#">Bvlgari</a></li>
+                                <li><a href="#">Coach</a></li>
+                                <li><a href="#">Kenzo</a></li>
+                                <li><a href="#">D&G</a></li>
+                                <li><a href="#">Jean Paul Gaultier</a></li>
+                            </ul>
+                        </li>
+                        <li class="menu-item-has-children">
+                            <a href="#">Unisex</a>
+                            <ul class="sub-menu">
+                                <li><a href="#">Ajmal</a></li>
+                                <li><a href="#">Calvin Klein</a></li>
+                                <li><a href="#">The Body Shop</a></li>
+                                <li><a href="#">Lattafa</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li class="menu-item-has-children">
+                    <a href="#">Blog</a>
+                    <ul class="sub-menu">
+                        <li><a href="#">Newsletter</a></li>
+                        <li><a href="#">Social Media</a></li>
+                    </ul>
+                </li>
+                <li class="menu-item-has-children">
+                    <a href="#">My Account</a>
+                </li>
+                <li class="menu-item-has-children">
+                    <a href="#">About Us</a>
+                </li>
+                <li class="menu-item-has-children">
+                    <a href="#">User</a>
+                    <ul class="sub-menu">
+                        <li><a href="#">Login In</a></li>
+                        <li><a href="#">Sign up</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+        <div class="offcanvas_footer">
+            <span><a href="#"><i class="fa fa-envelope-0"></i>deo@gmail.com</a></span>
+            <ul>
+                <li class="facebook"><a href="#"><i class="fa fa-facebook"></i></a></li>
+                <li class="twitter"><a href="#"><i class="fa fa-twitter"></i></a></li>
+                <li class="pinterest"><a href="#"><i class="fa fa-pinterest-p"></i></a></li>
+                <li class="linkedin"><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                <li class="google-plus"><a href="#"><i class="fa fa-google-plus"></i></a></li>
+            </ul>
+        </div>
+    </div>
+
+</div>
 
 
-<!-- Aboutus conent -->
+<header>
+    <div class="main_header header_transparent header-mobile-m">
+        <div class="header_container sticky-header">
+            <div class="container-fluid">
+                <div class="row align-items-center">
+                    <div class="col-lg-2">
+                        <div class="logo">
+                            <a href="index.html"><img src="images/logo.png" alt=""></a>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6">
+                        <!-- main-menu starts -->
+                        <div class="main_menu menu_two menu_position">
+                            <nav>
+                                <ul>
+                                    <li>
+                                        <a href="index.html" class="active">Home <i
+                                                class="fa fa-angle-down"></i></a>
+                                        <ul class="sub_menu">
+                                            <li><a href="#">Men</a></li>
+                                            <li><a href="#">Women</a></li>
+                                            <li><a href="#">Unisex</a></li>
+                                            <li><a href="#">Kids</a></li>
+                                        </ul>
+
+                                    </li>
+
+                                    <li class="mega_items">
+                                        <a href="#">Brands <i class="fa fa-angle-down"></i></a>
+                                        <div class="mega_menu">
+                                            <ul class="mega_menu_inner">
+                                                <li>
+                                                    <a href="#">Men</a>
+                                                    <ul>
+                                                        <li><a href="#">Versace</a></li>
+                                                        <li><a href="#">Hugo Boss</a></li>
+                                                        <li><a href="#">Jaguar</a></li>
+                                                        <li><a href="#">Armani</a></li>
+                                                        <li><a href="#">Paco Rabbane</a></li>
+                                                        <li><a href="#">Ralph Lauren</a></li>
+                                                    </ul>
+
+                                                </li>
+                                                <li>
+                                                    <a href="#">Women</a>
+                                                    <ul>
+                                                        <li><a href="#">Bvlgari</a></li>
+                                                        <li><a href="#">Coach</a></li>
+                                                        <li><a href="#">Kenzo</a></li>
+                                                        <li><a href="#">D&G</a></li>
+                                                        <li><a href="#">Jean Paul Gaultier</a></li>
+                                                    </ul>
+
+                                                </li>
+                                                <li>
+                                                    <a href="#">Unisex</a>
+                                                    <ul>
+                                                        <li><a href="#">Ajmal</a></li>
+                                                        <li><a href="#">Calvin Klein</a></li>
+                                                        <li><a href="#">The Body Shop</a></li>
+                                                        <li><a href="#">Lattafa</a></li>
+                                                    </ul>
+
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <a href="#">Blog <i class="fa fa-angle-down"></i></a>
+                                        <ul class="sub_menu pages">
+                                            <li><a href="#">Newsletter</a></li>
+                                            <li><a href="#">Social Media</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">About Us</a></li>
+                                    <li><a href="contact.html">Contact Us</a></li>
+                                    <li>
+                                        <a href="#">User <i class="fa fa-angle-down"></i></a>
+                                        <ul class="sub_menu pages">
+                                            <li><a href="login.html">Login In</a></li>
+                                            <li><a href="signup.html">Sign Up</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+
+                        <!-- main menu ends -->
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="header_top_right">
+                            <div class="header_right_info">
+                                <ul>
+                                    <li class="search_box">
+                                        <a href="javascript:void(0)">
+                                            <i class="fa fa-search"></i>
+                                        </a>
+                                        <div class="search_widget">
+                                            <form action="#">
+                                                <input type="text" placeholder="Search your perfume">
+                                                <button type="submit"><i class="fa fa-search"></i></button>
+                                            </form>
+                                        </div>
+                                    </li>
+                                    <li class="header_wishlist">
+                                        <a href="#">
+                                            <i class="fa fa-heart-o"></i>
+                                            <span class="item_count">4</span>
+                                        </a>
+                                    </li>
+                                    <li class="mini_cart_wrapper">
+                                        <a href="javascript:void(0)">
+                                            <i class="fa fa-shopping-cart"></i>
+                                            <span class="item_count">2</span>
+                                        </a>
+
+                                        <!-- mini cart  -->
+                                        <div class="mini_cart mini_cart2">
+                                            <div class="cart_gallery">
+                                                <div class="cart_item">
+                                                    <div class="cart_img">
+                                                        <a href="#"><img src="images/small-product/mini1.png"
+                                                                alt="Perfume"></a>
+                                                    </div>
+                                                    <div class="cart_info">
+                                                        <a href="#">Hugo Boss</a>
+                                                        <p><span>Rs. 3330</span> X 1</p>
+                                                    </div>
+                                                    <div class="cart_remove">
+                                                        <a href="#"><i class="fa fa-times"></i></a>
+                                                    </div>
+                                                </div>
+                                                <div class="cart_item">
+                                                    <div class="cart_img">
+                                                        <a href="#"><img src="images/small-product/mini2.png"
+                                                                alt="Perfume"></a>
+                                                    </div>
+                                                    <div class="cart_info">
+                                                        <a href="#">Bvlgari</a>
+                                                        <p><span>Rs. 8350</span> X 1</p>
+                                                    </div>
+                                                    <div class="cart_remove">
+                                                        <a href="#"><i class="fa fa-times"></i></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="mini_cart_table">
+                                                <div class="cart_table_border">
+                                                    <div class="cart_total">
+                                                        <span>Sub Total :</span>
+                                                        <span class="price">Rs. 11990</span>
+                                                    </div>
+
+                                                    <div class="cart_total mt-10">
+                                                        <span>Total :</span>
+                                                        <span class="price">Rs. 11990</span>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                            <div class="mini_cart_footer">
+                                                <div class="cart_button">
+                                                    <a href="#">View Cart</a>
+                                                </div>
+                                                <div class="cart_button">
+                                                    <a href="#">Checkout</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- mini cart ends -->
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="header_account">
+                                <ul>
+                                    <li class="top_links">
+                                        <a href="#">
+                                            <i class="fa fa-cog"></i>
+                                        </a>
+                                        <ul class="dropdown_links">
+                                            <li><a href="#">Checkout</a></li>
+                                            <li><a href="#">My Account</a></li>
+                                            <li><a href="#">Shopping cart</a></li>
+                                            <li><a href="#">Wishlist</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="language">
+                                        <a href="#"><img src="images/icon/language.png" alt="English"> EN <i
+                                                class="fa fa-angle-down"></i></a>
+                                        <ul class="dropdown_language">
+                                            <li><a href="#">English</a></li>
+                                            <li><a href="#">Germany</a></li>
+                                            <li><a href="#">Tamil</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="currency">
+                                        <a href="#">INR <i class="fa fa-angle-down"></i></a>
+                                        <ul class="dropdown_currency">
+                                            <li><a href="#">EUR - EURO</a></li>
+                                            <li><a href="#">GBP - British Pound</a></li>
+                                            <li><a href="#">USD - US Dollar</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<!-- header section ends here -->
+
+
+
+
+
+<!-- Aboutus conent  starts-->
 
 <section class="about">
   <h1 style="font-size: 50px;">About Us</h1>
@@ -259,56 +1126,566 @@ business-office-business-woman-professional.jpg" alt="User 3">
 
 </div>
 
+<!-- aboutus content ends -->
 
 
 
 
 
-      <div class="footercontainer">
-        <footer class="footer">
-            <div class="container">
-                <div class="row">
-                    <div class="footer-col">
-                        <h4>Company</h4>
+
+
+
+<!-- footer section starts here -->
+
+<footer class="footer_widgets color_two">
+    <div class="footer_top">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 col-sm-7">
+                    <div class="widgets_container contact_us">
+                        <div class="footer_logo">
+                            <a href="#"><img src="images/logo.png" alt="Logo"></a>
+                        </div>
+                        <div class="footer_desc">
+                            <p>Get all types of perfume from us within 2 day delivery. We can even order the
+                                perfumes which are not in our database. To do that kindly send a E-mail to the
+                                company's mail id.</p>
+                        </div>
+                        <p>
+                            <span>Address :</span> murugesanstores, trichy at tamilnadu
+                        </p>
+                        <p><span>Email :</span> <a href="#">prabhaharncad01@gmail.com</a></p>
+                        <p><span>Phone :</span> <a href="tel: +91 9043792705">+91 9043792705</a> </p>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 col-sm-5">
+                    <div class="widgets_container widget_menu">
+                        <h3>Information</h3>
+                        <div class="footer_menu">
+                            <ul>
+                                <li><a href="#">About Us</a></li>
+                                <li><a href="#">Prices Drop</a></li>
+                                <li><a href="#">New Products</a></li>
+                                <li><a href="#">Best Sales</a></li>
+                                <li><a href="#">Terms & Conditions</a></li>
+                                <li><a href="#">Gift Certificate</a></li>
+                                <li><a href="#">My Account</a></li>
+                                <li><a href="#">Order History</a></li>
+                                <li><a href="#">Wish List</a></li>
+                                <li><a href="#">Specials</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="widgets_container widgets_p_product">
+                        <h3>Featured Products</h3>
+                        <div class="small_product_container small_product_column1 owl-carousel">
+                            <div class="small_product_list">
+                                <article class="single_product">
+                                    <figure>
+                                        <div class="product_thumb">
+                                            <a href="#" class="primary_img">
+                                                <img src="images/onsale/D12-1.png" alt="">
+                                            </a>
+                                            <a href="#" class="secondary_img">
+                                                <img src="images/onsale/D12-2.png" alt="">
+                                            </a>
+
+
+                                        </div>
+                                        <figcaption class="product_content">
+                                            <h4 class="product_name">
+                                                <a href="#" style="color: white;">Bvlgari Women Goldea</a>
+                                            </h4>
+
+                                            <div class="price_box">
+                                                <span class="old_price">Rs. 3999</span>
+                                                <span class="current_price" style="color: white;">Rs. 3700</span>
+                                            </div>
+                                        </figcaption>
+                                    </figure>
+                                </article>
+                                <article class="single_product">
+                                    <figure>
+                                        <div class="product_thumb">
+                                            <a href="#" class="primary_img">
+                                                <img src="images/onsale/D11-1.png" alt="">
+                                            </a>
+                                            <a href="#" class="secondary_img">
+                                                <img src="images/onsale/D11-2.png" alt="">
+                                            </a>
+
+
+                                        </div>
+                                        <figcaption class="product_content">
+                                            <h4 class="product_name">
+                                                <a href="#" style="color: white;">Jimmy Choo Illicit Flower
+                                                </a>
+                                            </h4>
+                                            <div class="price_box">
+                                                <span class="old_price">Rs. 4999</span>
+                                                <span class="current_price" style="color: white;">Rs.
+                                                    4200</span>
+                                            </div>
+                                        </figcaption>
+                                    </figure>
+                                </article>
+                                <article class="single_product">
+                                    <figure>
+                                        <div class="product_thumb">
+                                            <a href="#" class="primary_img">
+                                                <img src="images/best-product/B5-1.png" alt="">
+                                            </a>
+                                            <a href="#" class="secondary_img">
+                                                <img src="images/best-product/B5-2.png" alt="">
+                                            </a>
+
+                                        </div>
+                                        <figcaption class="product_content">
+                                            <h4 class="product_name">
+                                                <a href="#" style="color: white;">Jimmy Choo Women Fever</a>
+                                            </h4>
+
+                                            <div class="price_box">
+                                                <span class="old_price">Rs. 7499</span>
+                                                <span class="current_price" style="color: white;">Rs. 7200</span>
+                                            </div>
+                                        </figcaption>
+                                    </figure>
+                                </article>
+                            </div>
+                            <div class="small_product_list">
+                                <article class="single_product">
+                                    <figure>
+                                        <div class="product_thumb">
+                                            <a href="#" class="primary_img">
+                                                <img src="images/best-product/B4-1.png" alt="">
+                                            </a>
+                                            <a href="#" class="secondary_img">
+                                                <img src="images/best-product/B4-2.png" alt="">
+                                            </a>
+
+
+                                        </div>
+                                        <figcaption class="product_content">
+                                            <h4 class="product_name">
+                                                <a href="#" style="color: white;">Mugler Aura Women</a>
+                                            </h4>
+
+                                            <div class="price_box">
+                                                <span class="old_price">Rs. 7999</span>
+                                                <span class="current_price" style="color: white;">Rs. 7550</span>
+                                            </div>
+                                        </figcaption>
+                                    </figure>
+                                </article>
+                                <article class="single_product">
+                                    <figure>
+                                        <div class="product_thumb">
+                                            <a href="#" class="primary_img">
+                                                <img src="images/onsale/D1-1.png" alt="">
+                                            </a>
+                                            <a href="#" class="secondary_img">
+                                                <img src="images/onsale/D1-2.png" alt="">
+                                            </a>
+
+
+                                        </div>
+                                        <figcaption class="product_content">
+                                            <h4 class="product_name">
+                                                <a href="#" style="color: white;">Paco Rabbane Pure XS for her
+                                                </a>
+                                            </h4>
+                                            <div class="price_box">
+                                                <span class="old_price">Rs. 6550</span>
+                                                <span class="current_price" style="color: white;">Rs.
+                                                    4250</span>
+                                            </div>
+                                        </figcaption>
+                                    </figure>
+                                </article>
+                                <article class="single_product">
+                                    <figure>
+                                        <div class="product_thumb">
+                                            <a href="#" class="primary_img">
+                                                <img src="images/new-product/N5-1.png" alt="">
+                                            </a>
+                                            <a href="#" class="secondary_img">
+                                                <img src="images/new-product/N5-2.png" alt="">
+                                            </a>
+
+
+                                        </div>
+                                        <figcaption class="product_content">
+                                            <h4 class="product_name">
+                                                <a href="#" style="color: white;">Kenzo Women World</a>
+                                            </h4>
+
+                                            <div class="price_box">
+                                                <span class="old_price">Rs. 5999</span>
+                                                <span class="current_price" style="color: white;">Rs. 5900</span>
+                                            </div>
+                                        </figcaption>
+                                    </figure>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="widgets_container widgets_p_product">
+                        <h3>Most Viewed Products</h3>
+                        <div class="small_product_container small_product_column1 owl-carousel">
+                            <div class="small_product_list">
+                                <article class="single_product">
+                                    <figure>
+                                        <div class="product_thumb">
+                                            <a href="#" class="primary_img">
+                                                <img src="images/onsale/D12-1.png" alt="">
+                                            </a>
+                                            <a href="#" class="secondary_img">
+                                                <img src="images/onsale/D12-2.png" alt="">
+                                            </a>
+
+
+                                        </div>
+                                        <figcaption class="product_content">
+                                            <h4 class="product_name">
+                                                <a href="#" style="color: white;">Bvlgari Women Goldea</a>
+                                            </h4>
+
+                                            <div class="price_box">
+                                                <span class="old_price">Rs. 3999</span>
+                                                <span class="current_price" style="color: white;">Rs. 3700</span>
+                                            </div>
+                                        </figcaption>
+                                    </figure>
+                                </article>
+                                <article class="single_product">
+                                    <figure>
+                                        <div class="product_thumb">
+                                            <a href="#" class="primary_img">
+                                                <img src="images/onsale/D11-1.png" alt="">
+                                            </a>
+                                            <a href="#" class="secondary_img">
+                                                <img src="images/onsale/D11-2.png" alt="">
+                                            </a>
+
+
+                                        </div>
+                                        <figcaption class="product_content">
+                                            <h4 class="product_name">
+                                                <a href="#" style="color: white;">Jimmy Choo Illicit Flower
+                                                </a>
+                                            </h4>
+                                            <div class="price_box">
+                                                <span class="old_price">Rs. 4999</span>
+                                                <span class="current_price" style="color: white;">Rs.
+                                                    4200</span>
+                                            </div>
+                                        </figcaption>
+                                    </figure>
+                                </article>
+                                <article class="single_product">
+                                    <figure>
+                                        <div class="product_thumb">
+                                            <a href="#" class="primary_img">
+                                                <img src="images/best-product/B5-1.png" alt="">
+                                            </a>
+                                            <a href="#" class="secondary_img">
+                                                <img src="images/best-product/B5-2.png" alt="">
+                                            </a>
+
+                                        </div>
+                                        <figcaption class="product_content">
+                                            <h4 class="product_name">
+                                                <a href="#" style="color: white;">Jimmy Choo Women Fever</a>
+                                            </h4>
+
+                                            <div class="price_box">
+                                                <span class="old_price">Rs. 7499</span>
+                                                <span class="current_price" style="color: white;">Rs. 7200</span>
+                                            </div>
+                                        </figcaption>
+                                    </figure>
+                                </article>
+                            </div>
+                            <div class="small_product_list">
+                                <article class="single_product">
+
+
+                                    <figure>
+                                        <div class="product_thumb">
+                                            <a href="#" class="primary_img">
+                                                <img src="images/best-product/B4-1.png" alt="">
+                                            </a>
+                                            <a href="#" class="secondary_img"><img
+                                                    src="images/best-product/B4-2.png" alt=""></a>
+                                        </div>
+                                        <figcaption class="product_content">
+                                            <h4 class="product_name">
+                                                <a href="#" style="color: white;">Mugler Aura Women</a>
+                                            </h4>
+
+                                            <div class="price_box">
+                                                <span class="old_price">Rs. 7999</span>
+                                                <span class="current_price" style="color: white;">Rs. 7550</span>
+                                            </div>
+                                        </figcaption>
+                                    </figure>
+                                </article>
+                                <article class="single_product">
+
+
+                                    <figure>
+                                        <div class="product_thumb">
+                                            <a href="#" class="primary_img">
+                                                <img src="images/best-product/B5-1.png" alt="">
+                                            </a>
+                                            <a href="#" class="secondary_img"><img
+                                                    src="images/best-product/B5-2.png" alt=""></a>
+                                        </div>
+                                        <figcaption class="product_content">
+                                            <h4 class="product_name">
+                                                <a href="#" style="color: white;">Jimmy Choo Women Fever</a>
+                                            </h4>
+
+                                            <div class="price_box">
+                                                <span class="old_price">Rs. 7499</span>
+                                                <span class="current_price" style="color: white;">Rs. 7200</span>
+                                            </div>
+                                        </figcaption>
+                                    </figure>
+                                </article>
+                                <article class="single_product">
+
+
+                                    <figure>
+                                        <div class="product_thumb">
+                                            <a href="#" class="primary_img">
+                                                <img src="images/best-product/B6-1.png" alt="">
+                                            </a>
+                                            <a href="#" class="secondary_img"><img
+                                                    src="images/best-product/B6-2.png" alt=""></a>
+                                        </div>
+                                        <figcaption class="product_content">
+                                            <h4 class="product_name">
+                                                <a href="#" style="color: white;">Dloce & Gabbana Women </a>
+                                            </h4>
+
+                                            <div class="price_box">
+                                                <span class="old_price">Rs. 7499</span>
+                                                <span class="current_price" style="color: white;">Rs. 7200</span>
+                                            </div>
+                                        </figcaption>
+                                    </figure>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="footer_link">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <ul>
+                        <li><a href="#">Order History</a></li>
+                        <li><a href="#">Wish List</a></li>
+                        <li><a href="#">Affiliate</a></li>
+                        <li><a href="#">Site Map</a></li>
+                        <li><a href="#">Newsletter</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer section starts  -->
+
+    <div class="footer_bottom">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 col-md-6">
+                    <div class="copyright_area">
+                        <p>Copyright &copy; 2021 <a href="#">Perfume Store </a>All right Reserved.</p>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6">
+                    <div class="footer_payment text-right">
                         <ul>
-                            <li><a href="aboutus.html">About us</a></li>
-                            <li><a href="service.html">Our service</a></li>
-                            <li><a href="privacypolicy.html">Privacy policy</a></li>
-                            <li><a href="affliatedprogram.html">Affiliate programs</a></li>
+                            <li><a href="#"><img src="images/icon/paypal.jpg" alt=""></a></li>
+                            <li><a href="#"><img src="images/icon/paypal1.jpg" alt=""></a></li>
+                            <li><a href="#"><img src="images/icon/paypal2.jpg" alt=""></a></li>
+                            <li><a href="#"><img src="images/icon/paypal3.jpg" alt=""></a></li>
+                            <li><a href="#"><img src="images/icon/paypal4.jpg" alt=""></a></li>
+                            <li><a href="#"><img src="images/icon/paypal5.jpg" alt=""></a></li>
                         </ul>
                     </div>
-                    <div class="footer-col">
-                        <h4>Get help</h4>
-                        <ul>
-                            <li><a href="faq.html">FAQ</a></li>
-                            <li><a href="shipping.html">Shipping</a></li>
-                            <li><a href="returns.html">Returns</a></li>
-                            <li><a href="orderstatus.html">Order status</a></li>
-                            <li><a href="payment.html">Payment Options</a></li>
-                        </ul>
-                    </div>
-                    <div class="footer-col">
-                        <h4>Online shop</h4>
-                        <ul>
-                            <li><a href="perfumesforher.html">Perfume for her</a></li>
-                            <li><a href="perfumesfirhim.html">Perfume for him</a></li>
-                            <li><a href="giftset.html">Gifts</a></li>
-                            <li><a href="combo.html">Combo</a></li>
-                        </ul>
-                    </div>
-                    <div class="footer-col">
-                        <h4>Follow us</h4>
-                        <div class="sociallinks">
-                            <a href="#" class=""><i class='bx bxl-facebook-circle'></i></a>
-                            <a href="#" class=""><i class='bx bxl-instagram'></i></a>
-                            <a href="#" class=""><i class='bx bxl-youtube'></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- footer section ends -->
+
+<!-- modal section starts  -->
+
+
+<div class="modal fade" id="modal_box" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <button type="button" data-dismiss="modal" aria-label="close" class="close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+            <div class="modal_body">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-5 col-md-5 col-sm-12">
+                            <div class="modal_tab">
+                                <div class="tab-content product-details-large">
+                                    <div class="tab-pane fade show active" id="tab1" role="tabpanel">
+                                        <div class="modal_tab_img">
+                                            <a href="#"><img src="images/new-product/N1-1.png" alt=""></a>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane fade" id="tab2" role="tabpanel">
+                                        <div class="modal_tab_img">
+                                            <a href="#"><img src="images/new-product/N2-1.png" alt=""></a>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane fade" id="tab3" role="tabpanel">
+                                        <div class="modal_tab_img">
+                                            <a href="#"><img src="images/new-product/N3.png" alt=""></a>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane fade" id="tab4" role="tabpanel">
+                                        <div class="modal_tab_img">
+                                            <a href="#"><img src="images/new-product/N4-1.png" alt=""></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="modal_tab_button">
+                                    <ul class="nav product_navactive owl-carousel" role="tablist">
+                                        <li>
+                                            <a href="#tab1" class="nav-link active" data-toggle="tab" role="tab"
+                                                aria-controls="tab1" aria-selected="false">
+                                                <img src="images/new-product/N1-1.png" alt="">
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#tab2" class="nav-link" data-toggle="tab" role="tab"
+                                                aria-controls="tab2" aria-selected="false">
+                                                <img src="images/new-product/N2-1.png" alt="">
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#tab3" class="nav-link" data-toggle="tab" role="tab"
+                                                aria-controls="tab3" aria-selected="false">
+                                                <img src="images/new-product/N3.png" alt="">
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#tab4" class="nav-link" data-toggle="tab" role="tab"
+                                                aria-controls="tab4" aria-selected="false">
+                                                <img src="images/new-product/N4-1.png" alt="">
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-7 col-md-7 col-sm-12">
+                            <div class="modal_right">
+                                <div class="modal_title mb-10">
+                                    <h2>Paco Rabbane Men Invictus</h2>
+                                </div>
+                                <div class="modal_price mb-10">
+                                    <span class="new_price">Rs. 7600</span>
+                                    <span class="old_price">Rs. 8100</span>
+                                </div>
+                                <div class="modal_description mb-15">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis earum
+                                        nesciunt consequatur deleniti nam dicta eligendi iusto quaerat dolores
+                                        debitis, est natus omnis consequuntur sequi. Ipsam sint rerum minus eos?</p>
+                                </div>
+                                <div class="variants_selects">
+                                    <div class="variants_size">
+                                        <h2>Size</h2>
+                                        <select class="select_option">
+                                            <option value="1" selected>10ml</option>
+                                            <option value="1">25ml</option>
+                                            <option value="1">50ml</option>
+                                            <option value="1">100ml</option>
+                                            <option value="1">250ml</option>
+                                        </select>
+                                    </div>
+                                    <div class="variants_fragrance">
+                                        <h2>Fragrance</h2>
+                                        <select class="select_option">
+                                            <option value="1" selected>Rose</option>
+                                            <option value="1">Chocolate</option>
+                                            <option value="1">Sweet</option>
+                                            <option value="1">Fruit</option>
+                                            <option value="1">Intense</option>
+                                        </select>
+                                    </div>
+                                    <div class="modal_add_to_cart">
+                                        <form action="#">
+                                            <input type="number" min="1" max="100" step="1" value="1">
+                                            <button type="submit">Add to cart</button>
+                                        </form>
+                                    </div>
+                                </div>
+                                <div class="modal_social">
+                                    <h2>Follow us on</h2>
+                                    <ul>
+                                        <li class="facebook"><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                        <li class="twitter"><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                        <li class="pinterest"><a href="#"><i class="fa fa-pinterest"></i></a></li>
+                                        <li class="google-plus"><a href="#"><i class="fa fa-google-plus"></i></a>
+                                        </li>
+                                        <li class="linkedin"><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </footer>
+        </div>
     </div>
-    
+
+</div>
+
+
+
+<!-- modal section ends -->
+
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.min.js"></script>
+<script src="countdown.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/js/jquery.nice-select.min.js"></script>
+<script src="main.js"></script>
+
+</body>
+
+</html>
+
+
+
 
 </body>
 </html>
